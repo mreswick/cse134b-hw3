@@ -8,6 +8,7 @@
     about his interests, experiences, and current going-ons here at his home page.">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="Assets/styles/bio.css">
+    <link rel="stylesheet" href="Assets/styles/index.css">
   </head>
   <body>
 
@@ -37,9 +38,10 @@
 
     <main>
       <h1 title="The home page for this site.">Portfolio Home:</h1>
+      <hr id="titleHr">
 
       <!-- Hero photo-->
-      <figure>
+      <figure draggable="true">
         <img src="Assets/images/home/misha_headshot.jpg" alt="Head shot photo of Misha." width="512" height="415">
         <figcaption id="heroImgCapt" title="Misha Reswick."><p>Misha Reswick<br>CSE @UCSD</p></figcaption>
       </figure>
@@ -72,22 +74,25 @@
         <!--Upcoming section-->
         <section id="upcomingEvents" title="Upcoming events for Misha.">
           <h2>Upcoming Events:</h2>
-          <ul>
-            <li title="Graduation">Graduation: I am both happy and yet also reserved that I will be graduating
+          <ul id="upcoming">
+            <li title="Graduation"><em class="upcomingStart">Graduation:</em> I am both happy and yet also reserved that I will be graduating
               from UCSD in Summer 2023! It has been an incredible experience, and it is sorry to have to leave: but I look
               forward to the opportunities that come; and who knows, perhaps I will return for graduate school.
             </li>
-            <li title="Amazon New Hire">Amazon New Hire: I am excited to say that I have accepted a full-time offer with Amazon
+            <li title="Amazon New Hire"><em class="upcomingStart">Amazon New Hire:</em> I am excited to say that I have accepted a full-time offer with Amazon
               in Washington state as a software developer, to start also in Summer 2023. I look forward to returning to work with 
               a fantastic team!
             </li>
           </ul>
 
         </section>
-      </article>I have accepted a full-time offer with Amazon
-              in Washington state as a software developer, to start also in Summer 2023. I look forward to returning to work with 
+      </article>
+      <footer id="amznOffer">
+        <p>I have accepted a full-time offer with Amazon
+              in Washington state as a software developer, to start also in Summer 2023.<br>I look forward to returning to work with 
               a fantastic team!
-            
+        </p>
+      </footer>
     </main>
 
     <hr>
