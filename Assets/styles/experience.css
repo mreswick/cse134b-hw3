@@ -1,0 +1,209 @@
+/*main page content*/
+body {
+  background-color: rgb(240, 240, 245);
+}
+
+main {
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*style*/
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  margin: 1rem 5% 2rem;
+  background-color: white;
+  box-shadow: 0.4rem 0.5rem rgb(7, 83, 140);
+  margin-top: 1rem;
+  padding: 0 3% 0;
+  /*font*/
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+article {
+  background-color: white;
+  /* border: 0.2rem solid black;
+  border-radius: 2rem;
+  padding: 1rem 5% 2rem;
+  margin: 0.5rem 1% 2rem;
+  box-shadow: 0.3rem 0.3rem rgb(7, 83, 140); */
+  /*flex container*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article section {
+  /*sections as flex containers*/
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /*style*/
+  background-color: white;
+  /* background-color: rgb(252, 253, 255); */
+  border: 0.12rem solid black;
+  border-radius: 1.5rem;
+  padding: 1rem 5% 1.5rem;
+  margin: 1rem 2rem 0;
+  box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
+}
+article section a {
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(0, 0, 100);
+}
+article section a:hover {
+  color:rgb(7, 83, 150);
+}
+article figure {
+  background-color: white;
+}
+article section p {
+  text-align: start;
+  text-indent: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*headings*/
+h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  margin-left: 2%;
+  align-self: start;
+  font-size: 3rem;
+}
+h2 {
+  align-self: start;
+}
+h2#hResume {
+  margin-left: 2%;
+}
+section#lessonsLearned h2 {
+  margin-left: 7%;
+}
+
+/*Resume section*/
+section#resume {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/*Misha info card*/
+ul#mishaInfoCardList {
+  list-style-type: none;
+  text-align: start;
+  margin: 0.3rem 0;
+}
+/*Education*/
+article section#education {
+  align-items: start;
+}
+article section#education h3 {
+  align-self: center;
+}
+section#education ul {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+section#education ul#ucsdList {
+  margin-bottom: 0.8rem;
+}
+/*Work + Volunteer*/
+section#work ul, section#volunteer ul {
+  margin: 0.5rem 0.7rem 0;
+}
+section#work > ul > li.firstWorkItem, section#volunteer > ul > li.firstWorkItem {
+  list-style-type: initial;
+}
+section#work > ul > li, section#volunteer > ul > li {
+  list-style-type: none;
+}
+section#work > ul ul, section#volunteer > ul ul {
+  list-style-position: inside;
+  padding-left: 0.5rem;
+}
+/*Tech Skills*/
+section#techSkills {
+  padding-bottom: 0.3rem;
+}
+section table#techSkillsTable {
+  margin: 0.5rem 0;
+  /*table as flow container*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+section table#techSkillsTable tbody {
+    /*style*/
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
+section table#techSkillsTable > caption {
+  margin: 0.2rem 1rem 0.7rem;
+  text-align: start;
+}
+section table#techSkillsTable > tr {
+  display: block;
+
+}
+/* section  col {
+  padding: 0.1rem 0.3rem;
+} */
+/* section#techSkills colgroup#cols col {
+  background-color: blue;
+  width: 30%;
+  border-left: 0.3rem solid black;
+} */
+section table#techSkillsTable td,
+section table#techSkillsTable th {
+  padding: 0.5rem 0.3rem;
+  width: 35%;
+  font-weight: 500;
+  /* border-left: 0.3rem solid black; */
+}
+section table#techSkillsTable th {
+  font-weight: bold;
+}
+section table#techSkillsTable td.col3,
+section table#techSkillsTable th.col3 {
+  width: 30%;
+  /* border-left: 0.3rem solid black; */
+}
+section table#techSkillsTable tr:nth-child(even) {
+  background-color: rgb(67, 122, 200);
+}
+section table#techSkillsTable tr:nth-child(odd) {
+  background-color: rgb(145, 201, 250);
+}
+
+section table#techSkillsTable td {
+  text-align: center;
+}
+/* - rounded table corners*/
+section table#techSkillsTable th#langToolColHeader {
+  border-top-left-radius: 1rem;
+}
+section table#techSkillsTable th#moreDescripColHeader {
+  border-top-right-radius: 1rem;
+}
+section table#techSkillsTable tr#Git td.col1 {
+  border-bottom-left-radius: 1rem;
+}
+section table#techSkillsTable tr#Git td.col3 {
+  border-bottom-right-radius: 1rem;
+}
+
+/*Lessons Learned*/
+section#lessonsLearned h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+section#lessonsLearned ul#lessonsLearnedList {
+  margin: 0.5rem 0.7rem 0 12%;
+}
+section#lessonsLearned ul#lessonsLearnedList li{
+  margin-bottom: 0.7rem;
+}

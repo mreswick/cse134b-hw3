@@ -8,6 +8,7 @@
     about his past education, work, and volunteer experiences here at this page.">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="Assets/styles/head_foot.css">
+    <link rel="stylesheet" href="Assets/styles/experience.css">
   </head>
   <body>
 
@@ -37,7 +38,7 @@
       <article title="Resume and technical skills info for Misha.">
         <h1 title="The 'experience' page for this site.">Experience:</h1>
         <section id="resume" title="Misha's resume.">
-          <h2>Resume:</h2>
+          <h2 id="hResume">Resume:</h2>
           <!--Misha info card section-->
           <div id="infoCard" title="Misha's overview info card.">
             <ul id="mishaInfoCardList">
@@ -66,7 +67,7 @@
             <h3 title="Work experience">Work:</h3>
             <!--Amazon internship-->
             <ul id="amznWorkList">
-              <li id="amazonTopInfo"><em>Amazon Software Development Engineer (SDE)<br>Intern, Bellevue, WA</em></li>
+              <li id="amazonTopInfo" class="firstWorkItem"><em>Amazon Software Development Engineer (SDE) Intern, Bellevue, WA</em></li>
               <li id="amazonInternshipDates">June 2022 - September 2022</li>
               <li id="amazonSubRoleInfo">
                 <ul id="amazonRoleInfo">
@@ -78,7 +79,7 @@
             </ul>
             <!--Main Street Scholars remote coach-->
             <ul id="mssCoachList">
-              <li id="mssCoachTopInfo"><em>Main Street Scholars Remote Coach, Half Moon Bay, CA</em></li>
+              <li id="mssCoachTopInfo" class="firstWorkItem"><em>Main Street Scholars Remote Coach, Half Moon Bay, CA</em></li>
               <li id="mssCoachDates">Fall 2020 - Winter 2021</li>
               <li id="mssCoachSubRoleInfo">
                 <ul id="mssCoachRoleInfo">
@@ -93,7 +94,7 @@
             <h3 title="Volunteer experience.">Volunteer:</h3>
             <!-- KLS intern-->
             <ul id="klsIntern">
-              <li id="klsInternTopInfo"><em>Khan Lab School (KLS) Math and Computer Science Summer Intern, Mountain View, CA</em></li>
+              <li id="klsInternTopInfo" class="firstWorkItem"><em>Khan Lab School (KLS) Math and Computer Science Summer Intern, Mountain View, CA</em></li>
               <li id="klsInternDates">June 2018 - July 2018</li>
               <li id="klsInternSubRoleInfo">
                 <ul id="klsInternRoleInfo">
@@ -107,7 +108,7 @@
             </ul>
             <!-- MSS Robotics Summer Camp Intern-->
             <ul id="mssIntern">
-              <li id="mssInternTopInfo"><em>Main Street Scholars Robotics Summer Camp, Half Moon Bay, CA</em></li>
+              <li id="mssInternTopInfo" class="firstWorkItem"><em>Main Street Scholars Robotics Summer Camp, Half Moon Bay, CA</em></li>
               <li id="mssInternDates">July 2018 - August 2018</li>
               <li id="mssInternSubRoleIinfo">
                 <ul id="mssInternRoleInfo">
@@ -121,96 +122,100 @@
               </li>
             </ul>
           </section>
+
+          <!--Tech Skills-->
+          <section id="techSkills" title="Misha's tech-related skills.">
+            <h3>Tech Skills:</h3>
+            <table id="techSkillsTable" title="Misha's programming language and related tool skills.">
+              <caption>A table of Misha's programming language and related tools skills. An optional
+                description follows for clarifying info. The level of mastery for a given 
+                language/tool is given on a scale from "Basic" to "Intermediate" to "Experienced."
+              </caption>
+              <colgroup id="cols">
+                <col span="2" id="langAndTool">
+                <col span="1" id="extraDescrip">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="col" id="langToolColHeader" class="col1">Language/Tool</th>
+                  <th scope="col" id="lvlMasteryColHeader" class="col2">Level of Mastery</th>
+                  <th scope="col" id="moreDescripColHeader" class="col3">More Description <br>(if needed)</th>
+                </tr>
+                <tr id="java">
+                  <td class="col1">Java</td>
+                  <td class="col2">Experienced</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="c">
+                  <td class="col1">C/C++</td>
+                  <td class="col2">Intermediate - Experienced</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="typeScript">
+                  <td class="col1">TypeScript</td>
+                  <td class="col2">Intermediate</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="scala">
+                  <td class="col1">Scala</td>
+                  <td class="col2">Basic</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="sql">
+                  <td class="col1">SQL</td>
+                  <td class="col2">Intermediate</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="python">
+                  <td class="col1">Python</td>
+                  <td class="col2">Intermediate - Experienced</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="matlab">
+                  <td class="col1">Matlab</td>
+                  <td class="col2">Basic - Intermediate</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="webDev">
+                  <td class="col1">HTML, CSS, JavaScript</td>
+                  <td class="col2">Basic</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="go">
+                  <td class="col1">Go (for networked programming)</td>
+                  <td class="col2">Basic</td>
+                  <td class="col3"></td>
+                </tr>
+                <tr id="unixOS">
+                  <td class="col1">Unix OS and Related Tools</td>
+                  <td class="col2">Intermediate</td>
+                  <td class="col3">File permissions, shell scripting, commandline syntax, Vim</td>
+                </tr>
+                <tr id="Git">
+                  <td class="col1">Git and Github</td>
+                  <td class="col2">Intermediate</td>
+                  <td class="col3">Use Git and Github on a daily basis, and have in a work environment as well.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </section>
 
-        <!--Tech Skills-->
-        <section id="techSkillsSection" title="Misha's tech-related skills.">
-          <h3>Tech Skills:</h3>
-          <table id="techSkillsTable" title="Misha's programming language and related tool skills.">
-            <caption>A table of Misha's programming language and related tools skills. An optional
-              description follows for clarifying info. The level of mastery for a given 
-              language/tool is given on a scale from "Basic" to "Intermediate" to "Experienced."
-            </caption>
-            <colgroup>
-              <col span="2" id="langAndTool">
-              <col span="1" id="extraDescrip">
-            </colgroup>
-            <tr>
-              <th scope="col" id="langToolColHeader">Language/Tool</th>
-              <th scope="col" id="lvlMasteryColHeader">Level of Mastery</th>
-              <th scope="col" id="moreDescripColHeader">More Description (if needed)</th>
-            </tr>
-            <tr id="java">
-              <td>Java</td>
-              <td>Experienced</td>
-              <td></td>
-            </tr>
-            <tr id="c">
-              <td>C/C++</td>
-              <td>Intermediate - Experienced</td>
-              <td></td>
-            </tr>
-            <tr id="typeScript">
-              <td>TypeScript</td>
-              <td>Intermediate</td>
-              <td></td>
-            </tr>
-            <tr id="scala">
-              <td>Scala</td>
-              <td>Basic</td>
-              <td></td>
-            </tr>
-            <tr id="sql">
-              <td>SQL</td>
-              <td>Intermediate</td>
-              <td></td>
-            </tr>
-            <tr id="python">
-              <td>Python</td>
-              <td>Intermediate - Experienced</td>
-              <td></td>
-            </tr>
-            <tr id="matlab">
-              <td>Matlab</td>
-              <td>Basic - Intermediate</td>
-              <td></td>
-            </tr>
-            <tr id="webDev">
-              <td>HTML, CSS, JavaScript</td>
-              <td>Basic</td>
-              <td></td>
-            </tr>
-            <tr id="go">
-              <td>Go (for networked programming)</td>
-              <td>Basic</td>
-              <td></td>
-            </tr>
-            <tr id="unixOS">
-              <td>Unix OS and Related Tools</td>
-              <td>Intermediate</td>
-              <td>File permissions, shell scripting, commandline syntax, Vim</td>
-            </tr>
-            <tr id="Git">
-              <td>Git and Github</td>
-              <td>Intermediate</td>
-              <td>Use Git and Github on a daily basis, and have in a work environment as well.</td>
-            </tr>
-          </table>
-        </section>
+        
       </article>
       <!--Lessons Learned-->
       <section id="lessonsLearned" title="Lessons I have learned from my work and volunteer experiences.">
         <h2 title="Lessons I have learned.">Lessons Learned:</h2>
         <ul id="lessonsLearnedList">
           <li id="amaznLessonsLearned">
-            <p>@Amazon: my intern position involved programming and designing for the team's fundamental infrastructure. 
+            <p><i>@Amazon:</i> my intern position involved programming and designing for the team's fundamental infrastructure. 
               Designing first before implementing, and ensuring that I had a a detailed design, were key. In addition,
               a key takeaway here was simplicity: there are no extra points for fancy code that is harder for people to 
               understand. Indeed, those who were full-time on the team as SDEs wrote some of the most straightforward
               and easily-readable code I have seen. One of my basic goals is to be able to do the same.
             </p>
           </li>
-          <li id="klsLessonsLearned"> <p>@Khan Lab School: this was an intern position working alongside Sal Khan and another intern. I was exposed
+          <li id="klsLessonsLearned"> <p><i>@Khan Lab School:</i> this was an intern position working alongside Sal Khan and another intern. I was exposed
               to working with elementary- through high school-aged students, and how project-based learning can be used
               to keep students engaged at all ages. I learned how to communicate with a range of younger students, as well
               as to plan their math and science curriculum. And most of all, I took away that learning is for everyone,
@@ -219,7 +224,7 @@
             </p>
           </li>
           <li id="mssLessonsLearned">
-            <p>@Main Street Scholars: I had two positions here over time: the first as a summer robotics coach, and the 
+            <p><i>@Main Street Scholars:</i> I had two positions here over time: the first as a summer robotics coach, and the 
             second later as an academic coach. This first experience provided another opportunity at working with younger
             students, but in this case, in a focused field as opposed to more traditional scholastic subjects. It was 
             rewarding to be able to teach physics to younger students in tangible ways that they could see, interact with,
