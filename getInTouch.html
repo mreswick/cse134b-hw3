@@ -7,6 +7,7 @@
     <meta name="description" content="Misha Reswick's personal portfolio website. Contact 
     him here.">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="Assets/styles/head_foot.css">
   </head>
   <body>
 
@@ -14,19 +15,20 @@
 
       <!--Main navigation menu.-->
       <nav class="mainNavigation" title="Menu for main navigation.">
-      <a href="index.html" title="Click to go to Home.">M/</a>
-      <ul>
-        <li><a href="index.html" title="Click to go to Home.">Home</a></li>
-        <li><a href="bio.html" title="Click to go to my Bio page.">Bio</a></li>
-        <li><a href="experience.html" title="Click to go to my Experience page.">Experience</a></li>
-        <li class="lastItemInNavMenu">Projects
-          <ul>
-            <li><a href="pastProjects.html" title="Click to go to my Past Projects' page.">Past Projects</a></li>
-            <li><a href="experiments.html" title="Click to go to my Experiments' page.">Experiments</a></li>
-          </ul>
-        </li>
-        <li><a href="getInTouch.html" title="Click to stay on my Get in Touch page to contact me.">Get in Touch</a></li>
-      </ul>
+        <a class="homeMain" href="index.html" title="Click to go to Home.">M/</a>
+        <ul class="mainNavigation">
+          <li id="mainnavHome"><a href="index.html" title="Click to go to Home.">Home</a></li>
+          <li id="mainnavBio"><a href="bio.html" title="Click to go to my Bio page.">Bio</a></li>
+          <li id="mainnavExp"><a href="experience.html" title="Click to go to my Experience page.">Experience</a></li>
+          <li id="mainnavProj" class="projects">Projects
+            <ul class="subMainNav">
+              <li id="submainnav1"><a href="pastProjects.html" title="Click to go to my Past Projects' page.">Past Projects</a></li>
+              <li id="submainnav2"><a href="experiments.html" title="Click to go to my Experiments' page.">Experiments</a></li>
+            </ul>
+          </li>
+          <li id="#mainanvTouch"><a href="getInTouch.html" title="Click to stay on my Get in Touch page to contact me.">Get in Touch</a></li>
+        </ul>
+        <hr class="navBorder">
       </nav>
     
     </header>
@@ -124,12 +126,13 @@
 
     <hr>
 
+    <hr id="footHr">
     <footer id="endOfPage">
       Misha Reswick<br>
-      <address><a href="mailto:mreswick@ucsd.com" title="Misha's UCSD email.">mreswick@ucsd.edu</a></address>
-      Last updated: January 2023
+      <address><a id="mishaEmail" href="mailto:mreswick@ucsd.com" title="Misha's UCSD email.">mreswick@ucsd.edu</a></address>
+      Last updated: February 2023
       <nav id="footerNav">
-        <a href="#">Back to top ^</a>
+        <a id="backToTop" href="#">Back to top ^</a>
       </nav>
     </footer>
 
