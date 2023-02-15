@@ -8,6 +8,7 @@
     him here.">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="Assets/styles/head_foot.css">
+    <link rel="stylesheet" href="Assets/styles/get_in_touch.css">
   </head>
   <body>
 
@@ -37,14 +38,14 @@
       <article title="Contact information and form to reach out to Misha.">
         <h1 title="The contact page for this site.">Get in Touch With Me:</h1>
         <div class="contactCard" title="Misha's contact card.">
-          <p>Misha Reswick</p>
+          <p id="nameP">Misha Reswick</p>
           <address><a href="mailto:mreswick@ucsd.com" title="Misha's UCSD email.">mreswick@ucsd.edu</a></address>
           <p><a href="https://www.linkedin.com/in/misha-reswick-165120203/" title="Misha's LinkedIn page link.">My LinkedIn page.</a>  </p>
         </div>
 
         <section id="contactForm" title="Contact-Me Form">
           <h2>Contact-Me Form:</h2>
-          <p>Use the form provided below to connect with me! Any information you enter here will be sent directly to me.</p>
+          <p id="headP">Use the form provided below to connect with me! Any information you enter here will be sent directly to me.</p>
           <!--Is currently just submitting to home page: submit to somewhere else that is possibly more useful later.-->
           <form action="index.html" method="post" target="_blank" name="contactMeForm" id="contactMeForm">
             <fieldset form="contactMeForm" id="introFormFields" title="Introductory message info.">
@@ -66,7 +67,7 @@
                     header for your message.</span>
                 </details>
               <input type="text" maxlength="150" name="messageSubject" id="messageSubject" required
-                placeholder="Message subject header here..." size="100">
+                placeholder="Message subject header here..." size="50">
               <!--How to best Reach You drop down info, with datalist-->
                 <details>
                   <summary>
@@ -112,7 +113,7 @@
           
           <!--Message-->
           <label for="mainMessage" title="Provide the main body content of your message here.">
-            <span class="labelContent" id="mainMessageLabel">Please write the main body content of your message here. Note that there is a maxlength of 2500 characters.</span>
+            <span class="labelContent" id="mainMessageLabel">Please write the main body content of your message here. Note that there is a maxlength of <i>2500 characters</i>.</span>
           </label>
           <textarea id="mainMessage" name="mainMessage" rows="25" cols="50" maxlength="2500"
             placeholder="Write your main message body here..." required></textarea>
@@ -123,8 +124,6 @@
       
       </article>
     </main>
-
-    <hr>
 
     <hr id="footHr">
     <footer id="endOfPage">

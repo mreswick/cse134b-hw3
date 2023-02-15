@@ -48,6 +48,7 @@ main > figure {
 main > figure > figcaption {
   text-align: center;
   font-size: 2rem;
+  line-height: 2.1rem;
 }
 main > figure > img {
   border-radius: 1rem;
