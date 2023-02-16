@@ -400,14 +400,15 @@ and (max-width: 1008px) {
     margin-top: 0;
   }
   h1 {
-    line-height: 1.3rem;
+    line-height: 2rem;
   }
   h2, h3 {
     line-height: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  article section#photos h2 {
+  article section#photos h2,
+  article section#robEce h2 {
     margin-top: 0;
   }
   h4 {
