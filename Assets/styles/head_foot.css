@@ -117,8 +117,8 @@ div#di
   /* -moz-transition: opacity var(--animation-timing), width var(--animation-timing),
   rotate var(--animation-timing), translate var(--animation-timing),
   background-color var(--animation-timing); */
-  transition: 
-   rotate var(--animation-timing);
+  /* transition: 
+   rotate var(--animation-timing); */
 }
 /* .hamMenu input { */
 li#mainnavHam input {
