@@ -154,19 +154,21 @@ nav.downNav {
   translate: 0;
 }
 
-/*ham menu coloring on edges*/
+/* ham menu coloring on edges*/
 .hamMenu:has(input:checked) {
   /*swap foreground and background colors*/ 
-  --temp-color: var(--foreground-color);
+  /* --temp-color: var(--foreground-color);
   --foreground-color: var(--backgorund-color);
-  --background-color: var(--temp-color);
-}
-.hamMenu:has(input:focus-visible)::before,
+  --background-color: var(--temp-color); */
+  --foreground-color: white;
+  --background-color: grey;
+} 
+/* .hamMenu:has(input:focus-visible)::before,
 .hamMenu:has(input:focus-visible)::after,
 .hamMenu input:focus-visible {
   border: 1px solid var(--background-color);
-  box-shadow: 0 0 0 1px var(--foreground-color); /*achieve a 2nd visual border*/ 
-}
+  box-shadow: 0 0 0 1px var(--foreground-color); *//*achieve a 2nd visual border*/ 
+/* }  */
 
 
 /* nav header menu styling */
@@ -252,6 +254,8 @@ header ul.mainNavigation {
   align-items: end;
   position: relative;
   text-indent: 0;
+  /*align items in center*/
+  align-items: center;
 }
 header div#headerPicWrapper {
   justify-self: center;
@@ -352,6 +356,9 @@ ul.mainNavigation > li {
   label.hamMenu {
     display: none;
   }
+  nav.sub1mainnav {
+    display:none;
+  }
 }
 
 @media only screen and (max-width: 1008px) and (min-width: 641px) {
@@ -388,6 +395,61 @@ ul.mainNavigation > li {
   li#mainnavExp, */
   li#mainnavProj,
   li#mainnavTouch {
+    display: none;
+  }
+
+  nav.mainNavigation {
+    position: relative;
+  }
+  /*sub nav menu*/
+  nav.sub1mainnav {
+    /* translate: -100%; */
+    /* transition: translate var(--animation-timing); */
+    opacity: 0;
+    transition: opacity var(--animation-timing);
+    /* translate: -100%; */
+    
+    position: absolute;
+    width: 80%;
+    /* padding: 1rem; */
+    top: 100%;
+    /* left: 50%;  */
+    left: 10%;
+  }
+  .hamMenu:has(input:checked) + nav.sub1mainnav {
+    /* translate: 0; */
+    opacity: 95%;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 {
+    list-style-type: none;
+    background-color: rgb(9, 21, 61); 
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 1rem;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 li.l1 {
+    padding: 1.3rem;
+    /* background-color: rgb(6, 22, 72);  */
+    /* background-color: rgb(7, 83, 150); */
+    background-color: rgb(3, 51, 94);
+    text-align: center;
+    border-radius: 1.5rem;
+    /* border: 0.1rem solid black; */
+    border: 0.1rem solid white;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 li.l1 a{
+    text-decoration: none;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 details ul.lowerLevelSubNav1 li {
+    list-style-type: none;
+    border: 0.15rem solid white;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  li#mainnavExp2 {
     display: none;
   }
 }
@@ -427,6 +489,58 @@ ul.mainNavigation > li {
   li#mainnavProj,
   li#mainnavTouch {
     display: none;
+  }
+
+  nav.mainNavigation {
+    position: relative;
+  }
+  /*sub nav menu*/
+  nav.sub1mainnav {
+    /* translate: -100%; */
+    /* transition: translate var(--animation-timing); */
+    opacity: 0;
+    transition: opacity var(--animation-timing);
+    /* translate: -100%; */
+    
+    position: absolute;
+    width: 80%;
+    /* padding: 1rem; */
+    top: 100%;
+    /* left: 50%;  */
+    left: 10%;
+  }
+  .hamMenu:has(input:checked) + nav.sub1mainnav {
+    /* translate: 0; */
+    opacity: 95%;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 {
+    list-style-type: none;
+    background-color: rgb(9, 21, 61); 
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 1rem;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 li.l1 {
+    padding: 1.3rem;
+    /* background-color: rgb(6, 22, 72);  */
+    /* background-color: rgb(7, 83, 150); */
+    background-color: rgb(3, 51, 94);
+    text-align: center;
+    border-radius: 1.5rem;
+    /* border: 0.1rem solid black; */
+    border: 0.1rem solid white;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 li.l1 a{
+    text-decoration: none;
+  }
+  nav.sub1mainnav ul.upperLevelSubNav1 details ul.lowerLevelSubNav1 li {
+    list-style-type: none;
+    border: 0.15rem solid white;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    margin-top: 0.5rem;
   }
 }
 
