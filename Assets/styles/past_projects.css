@@ -374,6 +374,8 @@ and (max-width: 1008px) {
   article section {
     margin: 0;
     padding: 0;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   article section#Websites-and-Soundscapes,
   article section#robEce,
@@ -383,10 +385,15 @@ and (max-width: 1008px) {
     box-shadow: none;
     margin: 0;
     padding: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  h1 {
+    line-height: 1.3rem;
   }
   article h2, h3 {
-    line-height: 1.5rem;
-    margin-top: 0.8rem;
+    line-height: 1.2rem;
+    margin-top: 1rem;
     margin-bottom: 0.2rem;
   }
   article video {
