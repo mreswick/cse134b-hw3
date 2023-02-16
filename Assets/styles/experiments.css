@@ -16,7 +16,7 @@ main {
   box-shadow: 0.4rem 0.5rem rgb(7, 83, 140);
   margin-top: 1rem;
   padding: 0 3% 0;
-  min-width: 75%;
+  /* min-width: 75%; */
   /*font*/
   font-weight: normal;
   font-size: 1rem;
@@ -80,12 +80,6 @@ article header {
   color: black;
 }
 
-article header p#headP {
-  text-indent: 2rem;
-  margin-top: 1.5rem;
-  margin-left: 7%;
-}
-
 section#codingStyles {
   background-color: rgb(226, 243, 252);
 }
@@ -145,9 +139,19 @@ main {
     margin: 1rem 2rem 0;
     max-width: 80%;
   }
+  article header p#headP {
+    text-indent: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 7%;
+  }
   
 }
 @media only screen and (max-width: 639px) {
+  article header p#headP {
+    text-indent: 2%;
+    margin-top: 1.5rem;
+    margin-left: 1%;
+  }
   article {
     width: fit-content;
   }
