@@ -125,8 +125,8 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
 }
 .hamMenu input:checked {
   /* background-color: red; */
-  opacity: 0;
-  width: 0;
+  /* opacity: 0;
+  width: 0; */
 }
 /*animation hamburger to X and vice versa*/
 .hamMenu:has(input:checked)::before {
