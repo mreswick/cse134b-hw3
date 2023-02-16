@@ -272,6 +272,9 @@ main, section {
     padding-left: 2%;
     padding-right: 2%
   }
+  h1 {
+    margin-bottom: 1.5rem;
+  }
   h2 {
     margin-bottom: 1.5rem;
   }
@@ -289,5 +292,18 @@ main, section {
   article section#resume {
     padding: 0;
     margin: 0;
+  }
+  article section#resume,
+  article section#education,
+  article section#work,
+  article section#volunteer,
+  article section#techSkills,
+  article section#lessonsLearned {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  main {
+    padding: 1%;
+    width: fit-content;
   }
 }
