@@ -1,0 +1,193 @@
+/*main page content*/
+body {
+  background-color: rgb(240, 240, 245);
+}
+
+main {
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*style*/
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  margin: 1rem 5% 2rem;
+  background-color: white;
+  box-shadow: 0.4rem 0.5rem rgb(7, 83, 140);
+  margin-top: 1rem;
+  padding: 0 3% 0;
+  /* min-width: 75%; */
+  /*font*/
+  font-weight: normal;
+  font-size: 1rem;
+}
+article a {
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(0, 0, 100);
+}
+article a:hover {
+  color:rgb(7, 83, 150);
+}
+
+article {
+  /*flex container*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*style*/
+  background-color: white;
+  padding: 1rem 2rem 0.5rem;
+
+}
+article section {
+  /*sections as flex containers*/
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /*style*/
+  background-color: rgb(215, 222, 234);
+  /* background-color: rgb(252, 253, 255); */
+  border: 0.12rem solid black;
+  border-radius: 1.5rem;
+  padding: 1rem 4% 1.5rem;
+  margin: 1rem 2rem 0;
+  box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
+}
+article section p {
+  text-align: start;
+  text-indent: 0rem;
+  margin-bottom: 1rem;
+}
+article div.contactCard {
+  text-align: center;
+  margin: 1rem 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+article div.contactCard p#nameP {
+  line-height: 1.4rem;
+  font-size: 1.3rem;
+}
+section#contactForm p#headP {
+  margin-left: 0;
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+form fieldset legend {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+
+/*headings*/
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0;
+  align-self: start;
+  font-size: 3rem;
+}
+h2 {
+  align-self: start;
+  margin-left: 1%;
+  margin-bottom: 0.3rem;
+  font-size: 1.4rem;
+}
+form label {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+/*form*/
+form fieldset#introFormFields {
+  padding: 1rem;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  background-color: rgb(196, 211, 236);
+  align-self: center;
+}
+form fieldset#introFormFields legend {
+  float: left;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+form details {
+  display: block;
+  clear: both;
+  margin: 0.3rem 0 0.3rem;
+  margin-left: 2rem;
+}
+form details summary {
+  cursor: pointer;
+  margin-left: -1.5rem;
+  font-style: italic;
+}
+form details span {
+  display: block;
+  margin: 0.5rem 0 0.5rem;
+}
+form input {
+  display: block;
+  margin-left: 2.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+form select {
+  display: block;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+form select optgroup, form datalist option {
+  /* border: 1rem solid rgb(7, 83, 140); */
+  background-color: rgb(189, 223, 255);
+  /* height: 10%; */
+}
+/* form select form details summary span.detailsContent{
+  display: block;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+} */
+
+form span#mainMessageLabel {
+  display: block;
+  text-align: center;
+  margin: 1rem 0.1rem 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+form textarea#mainMessage {
+  display: block;
+  text-align: start;
+  padding: 1rem;
+  border: 0.2rem solid black;
+  border-radius: 1.4rem;
+  align-self: center;
+}
+form button {
+  display: block;
+  align-self: right;
+  padding: 0.8rem;
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+section#contactForm {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+

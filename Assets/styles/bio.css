@@ -48,12 +48,12 @@ article section {
   margin: 1rem 0 0;
   box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
 }
-article section a {
+article section a, section p#currentlyP a {
   font-weight: 700;
   text-decoration: none;
   color: rgb(0, 0, 100);
 }
-article section a:hover {
+article section a:hover, section p#currentlyP a:hover {
   color:rgb(7, 83, 150);
 }
 article figure {
