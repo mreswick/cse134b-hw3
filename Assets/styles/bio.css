@@ -48,12 +48,12 @@ article section {
   margin: 1rem 0 0;
   box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
 }
-article section a, section p#currentlyP a {
+article section a, section#currLastSec a {
   font-weight: 700;
   text-decoration: none;
   color: rgb(0, 0, 100);
 }
-article section a:hover, section p#currentlyP a:hover {
+article section a:hover, section#currLastSec a:hover {
   color:rgb(7, 83, 150);
 }
 article figure {
@@ -107,7 +107,7 @@ main figure + p {
 /*headings*/
 h1 {
   margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   margin-left: 5%;
   align-self: start;
   font-size: 3rem;
@@ -129,6 +129,7 @@ h4 {
 h2#myBackground {
   align-self: start;
   font-size: 2rem;
+  margin-bottom: 0.7rem;
 }
 
 /*paragraph after Misha robot photo*/ 
@@ -214,7 +215,6 @@ article section#hobbiesSec p#hobTopP {
 article section#hobbiesSec ul {
   list-style-position: inside;
   text-align: left;
-  margin-bottom: 1rem;
   width: 80%;
   font-weight: 500;
   /*light-blue rounded*/ 
@@ -222,6 +222,7 @@ article section#hobbiesSec ul {
   padding: 1.2rem 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  margin-top: 0.3rem;
 }
 article section#hobbiesSec ul li {
   padding: 0;
@@ -236,10 +237,45 @@ article section#hobbiesSec ul p {
 }
 
 /*Currently*/
+section h2#currentlyTitle {
+  margin: 1rem;
+}
 section p#currentlyP {
   border: 0.12rem solid black;
   border-radius: 1.5rem;
   padding: 1rem 5% 1.5rem;
-  margin: 1rem 0 1rem;
+  margin: 1rem 1rem 1rem;
   box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
+}
+
+section#environmentSection h3 {
+  margin-bottom: 0.5rem;
+}
+/*animation*/
+/*make text larger in article section*/
+h1, h2, h3,h4,
+div#pWithAside,
+p#envLastP,
+ol#valuesList,
+section#hobbiesSec ul,
+p#currentlyP, 
+p#backgroundP, figure {
+  /* font-size: 1rem;
+  line-height: 1.1rem;
+  transition: font-size 4s 1s;
+  transition: line-height 4s 1s; */
+  transition: transform;
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+}
+h1:hover, h2:hover, h3:hover,h4:hover,
+div#pWithAside:hover,
+p#envLastP:hover,
+ol#valuesList:hover,
+section#hobbiesSec ul:hover,
+p#currentlyP:hover, 
+p#backgroundP:hover,figure:hover {
+  /* font-size: 1.5rem;
+  line-height: 1.6rem; */
+  transform: scale(1.08);
 }
