@@ -133,33 +133,33 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
   rotate: 45deg;
   width: var(--ham-x-width);
   /*offset up by height/2 of bar*/
-  translate: 0 calc(var(--ham-bar-height) / -2);
+  /* translate: 0 calc(var(--ham-bar-height) / -2); */
 }
 .hamMenu:has(input:checked)::after {
   rotate: -45deg; /*rotate the opposite direction*/
   width: var(--ham-x-width);
   /*offset down by height/2 of bar*/
-  translate: 0 calc(var(--ham-bar-height) / 2);
+  /* translate: 0 calc(var(--ham-bar-height) / 2); */
 }
 
 /*nav menu "sidebar" that slides down*/
-nav.downNav {
+/* nav.downNav { */
   /* min-height: 100vw; */
-  position: absolute;
+  /* position: absolute; */
   /*transition in*/
-  transition: translate var(--animation-timing);
+  /* transition: translate var(--animation-timing);
   translate: -100%;
   padding: 0.5rem 1rem;
   padding-top: calc(var(--ham-height) + 1rem);
   background-color: var(--foreground-color);
   color: var(--background-color);
   max-width: 10rem;
-  min-height: 100vh;
-}
+  min-height: 100vh; */
+/* } */
 /* - select the sidebar if the ham menu is selected*/
-.hamMenu:has(input:checked) + .downNav {
+/* .hamMenu:has(input:checked) + .downNav {
   translate: 0;
-}
+} */
 
 /* ham menu coloring on edges*/
 .hamMenu:has(input:checked) {
