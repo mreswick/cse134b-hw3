@@ -97,7 +97,9 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
 }
 .hamMenu::before,
 .hamMenu::after,
-.hamMenu input {
+/* .hamMenu input  */
+div#di
+{
   content: ""; /*to show up with content*/
   width: var(--ham-bar-width);
   height: var(--ham-bar-height);
