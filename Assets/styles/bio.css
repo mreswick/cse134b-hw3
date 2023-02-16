@@ -412,6 +412,7 @@ p#backgroundP:hover,figure:hover {
     display: block;
   }
   section#environmentSection aside {
+    margin-top: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     padding: 0.5rem;
