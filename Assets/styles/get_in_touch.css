@@ -248,7 +248,7 @@ main {
     padding-top: 0;
   }
   article section#contactForm input#messageSubject,
-  article section#contactForm input#nameOrOrgDetails,
+  article section#contactForm input#nameOrOrg,
   article section#contactForm input#bestReachYou
   {
     width: 90%;
