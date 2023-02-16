@@ -87,9 +87,12 @@
       <!-- Hero photo-->
       <figure draggable="true" title="Recent picture of Misha.">
         <picture id="mishaPicture">
-          <source srcset="Assets/images/home/misha_headshot_300_243.jpg" width="300" height="243"
-            type="image/jpeg" media="(max-width: 670px)">
-          <img src="Assets/images/home/misha_headshot.jpg" alt="Head shot photo of Misha." width="512" height="415">
+          <source srcset="Assets/images/home/misha_headshot.jpg" width="512" height="415"
+            type="image/jpeg" media="(min-width: 640px)">
+          <img src="Assets/images/home/misha_headshot_300_243.jpg" width="300" height="243" type="image/jpeg">
+          <!-- <source srcset="Assets/images/home/misha_headshot_300_243.jpg" width="300" height="243"
+            type="image/jpeg" media="(max-width: 640px)"> -->
+          <!-- <img src="Assets/images/home/misha_headshot.jpg" alt="Head shot photo of Misha." width="512" height="415"> --> -->
         </picture>
         
         <figcaption id="heroImgCapt" title="Misha Reswick."><p>Misha Reswick<br>CSE @UCSD</p></figcaption>
