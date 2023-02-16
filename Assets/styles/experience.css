@@ -114,7 +114,8 @@ section#work, section#volunteer, section#techSkills {
   /* width: 80%; */
 }
 section#work ul, section#volunteer ul {
-  margin: 0.5rem 0rem;
+  margin: 0.5rem 2%;
+  text-align: start;
 }
 section#work > ul > li.firstWorkItem, section#volunteer > ul > li.firstWorkItem {
   list-style-type: initial;
@@ -124,7 +125,8 @@ section#work > ul > li, section#volunteer > ul > li {
 }
 section#work > ul ul, section#volunteer > ul ul {
   list-style-position: inside;
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
+  padding-left: 1%;
 }
 
 @media only screen and (min-width: 640px) {
@@ -341,14 +343,6 @@ main, section {
     display: block;
 
   }
-  /* section  col {
-    padding: 0.1rem 0.3rem;
-  } */
-  /* section#techSkills colgroup#cols col {
-    background-color: blue;
-    width: 30%;
-    border-left: 0.3rem solid black;
-  } */
   section table#techSkillsTable td,
   section table#techSkillsTable th {
     padding: 0;
@@ -394,5 +388,10 @@ main, section {
   }
   section table#techSkillsTable tr#Git td.col2 {
     border-bottom-right-radius: 1rem;
+  }
+
+  section#lessonsLearned h2#lessonsH {
+    margin-bottom: 0;
+    line-height: 1.3rem;
   }
 }
