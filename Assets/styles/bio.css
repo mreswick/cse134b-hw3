@@ -365,4 +365,8 @@ p#backgroundP:hover,figure:hover {
   main article#background h2#myBackground {
     text-align: center;
   }
+  main {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
 }
