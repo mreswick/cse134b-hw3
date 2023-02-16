@@ -138,4 +138,16 @@ section#canvasExperimentation canvas {
   background-color: white;
 }
 
+@media only screen and (max-width: 639px) {
+  canvas {
+    transform: scale(0.5);
+  }
+  section#codingStyles pre {
+    width: fit-content;
+    padding: 2%;
+    padding-right: 3rem;
+    transform: scale(0.5);
+  }
+}
+
 
