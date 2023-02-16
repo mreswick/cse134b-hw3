@@ -115,7 +115,8 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
   transition: 
    rotate var(--animation-timing);
 }
-.hamMenu input {
+/* .hamMenu input { */
+li#mainnavHam input {
   appearance: none;
   -moz-apperance: none;
   padding: 0;
@@ -123,7 +124,8 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
   outline: none;
   pointer-events: none;
 }
-.hamMenu input:checked {
+/* .hamMenu input:checked { */
+li#mainnavHam input#checked {
   background-color: lightblue;
   width: calc(var(--ham-bar-width) + 1rem)
   /* opacity: 0;
@@ -429,7 +431,8 @@ ul.mainNavigation > li {
     /* left: 50%;  */
     left: 10%;
   }
-  .hamMenu:has(input:checked) + nav.sub1mainnav {
+  /* .hamMenu:has(input:checked) + nav.sub1mainnav { */
+  input#lab:checked + nav.sub1mainnav {
     /* translate: 0; */
     opacity: 95%;
   }
