@@ -147,9 +147,9 @@ main {
   
 }
 @media only screen and (max-width: 639px) {
-  main {
+  /* main {
     font-size: 19px;
-  }
+  } */
   article header p#headP {
     text-indent: 2%;
     margin-top: 1.5rem;
@@ -181,6 +181,9 @@ main {
   }
   section#canvasExperimentation {
     width: fit-content;
+  }
+  article#theart header#experimentsHeader h1 {
+    word-break: break-all;
   }
 
 }
