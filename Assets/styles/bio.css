@@ -20,6 +20,12 @@ main {
   font-weight: normal;
   font-size: 1rem;
 }
+@media only screen and (max-width: 840px) {
+  main {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
 
 article {
   background-color: white;
@@ -75,15 +81,21 @@ main > article figure {
   /*style*/
   border: 0.15rem solid black;
   border-radius: 2rem;
-  padding: 2rem 5% 1rem;
+  /* padding: 2rem 5% 1rem; */
+  padding: 2rem 2rem 1rem;
   margin-top: 1rem;
   box-shadow: 0.3rem 0.3rem rgb(7, 83, 140);
   text-align: center;
   max-width: 50%;
-  min-width: 380px;
+  /* min-width: 380px; */
+}
+@media only screen and (max-width: 640px) {
+  main > article figure {
+    padding: 2rem 1rem 1rem;
+  }
 }
 main > article figure figcaption {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   margin-bottom: 0;
 }
@@ -94,7 +106,12 @@ main > article section figure figcaption p {
   white-space: nowrap; /*to keep captions on a single line*/
   margin-bottom: 0;
 }
-main figure > img {
+/* main figure > img {
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+} */
+main figure {
   margin-bottom: 0.5rem;
   border-radius: 1rem;
   text-align: center;
@@ -143,8 +160,16 @@ p#backgroundP {
 }
 
 /*Environment*/ 
-main > article figure#hill {
+/* main > article figure#hill {
   min-width: 495px;
+} */
+main {
+  min-width: fit-content;
+}
+main article figure#hill, main article figure#robFig {
+  /* min-width: 80%; */
+  /* display: block; */
+  min-width: fit-content;
 }
 /* section#environmentSection p {
   text-align: start;
@@ -278,4 +303,66 @@ p#backgroundP:hover,figure:hover {
   /* font-size: 1.5rem;
   line-height: 1.6rem; */
   transform: scale(1.08);
+}
+
+/*get rid of middle border for smaller screens*/
+/* @media only screen and (max-width: 1007px) {
+  article#background {
+    border-style: none;
+  }
+} */
+/*get rid of middle border for smaller screens*/ 
+@media only screen and (max-width: 1007px) {
+  section#shepiSec, section#hobbiesSec {
+    border-style: none;
+    box-shadow: none;
+  } 
+  section#hobbiesSec {
+    margin-top: 0;
+  }
+  p#familyPara {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  figure#robFig {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  section#shepiSec figure#shepiImg {
+    width: fit-content;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  section#hobFamily {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;  
+  }
+  article section#environmentSection div#pWithAside p {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  section#environmentSection div#pWithAside {
+    padding-top: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  /*prevent overflow of aside*/ 
+  section#environmentSection aside {
+    text-indent: 0;
+  }
+  /*remove another border, on article around most of main content*/ 
+  main article#background {
+    border-style: none;
+    box-shadow: none;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  main article#background h2#myBackground {
+    text-align: center;
+  }
 }

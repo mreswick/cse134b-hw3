@@ -12,11 +12,10 @@
     <link rel="stylesheet" type="text/css" href="Assets/styles/head_foot.css">
   </head>
   <body>
-
     <header>
-
       <!--Main navigation menu.-->
       <nav class="mainNavigation" title="Menu for main navigation.">
+        <!-- <div class="emptyMainSpacer"></div> -->
         <a class="homeMain" href="index.html" title="Click to go to Home.">M/</a>
         <ul class="mainNavigation">
           <li id="mainnavHome"><a href="index.html" title="Click to go to Home.">Home</a></li>
@@ -24,15 +23,44 @@
           <li id="mainnavExp"><a href="experience.html" title="Click to go to my Experience page.">Experience</a></li>
           <li id="mainnavProj" class="projects" title="Click to open my Projects submenu.">Projects
             <ul class="subMainNav">
-              <li><a id="submainnav1" href="pastProjects.html" title="Click to go to my Past Projects' page.">Past Projects</a></li>
-              <li><a id="submainnav2" href="experiments.html" title="Click to go to my Experiments' page.">Experiments</a></li>
+              <li id="submainnav1"><a href="pastProjects.html" title="Click to go to my Past Projects' page.">Past Projects</a></li>
+              <li id="submainnav2"><a href="experiments.html" title="Click to go to my Experiments' page.">Experiments</a></li>
             </ul>
           </li>
-          <li id="#mainanvTouch"><a href="getInTouch.html" title="Click to go to my Get in Touch page to contact me.">Get in Touch</a></li>
+          <li id="mainnavTouch"><a href="getInTouch.html" title="Click to go to my Get in Touch page to contact me.">Get in Touch</a></li>
+          <li id="mainnavHam">
+            <!--Hamburger menu-->
+            <input id="lab" type="checkbox">
+            <label class="hamMenu" for="lab">
+              <div id="di"></div>
+            </label>
+            <!-- <nav class="downNav">
+              <nav>
+                <div>This</div>
+                <div>is</div>
+                <div>the</div>
+                <div>sidebar</div>
+              </nav>
+            </nav> -->
+            <nav class="sub1mainnav">
+              <ul class="upperLevelSubNav1">
+                <li class="l1" id="mainnavExp2"><a href="experience.html" title="Click to go to my Experience page.">Experience</a></li>
+                <li class="l1">
+                  <details>
+                    <summary>Projects:</summary>
+                      <ul class="lowerLevelSubNav1">
+                        <li id="submainnav1_2"><a href="pastProjects.html" title="Click to go to my Past Projects' page.">Past Projects</a></li>
+                        <li id="submainnav2_2"><a href="experiments.html" title="Click to go to my Experiments' page.">Experiments</a></li>
+                      </ul>
+                  </details>
+                </li>
+                <li id="mainnavTouch_2" class="l1"><a href="getInTouch.html" title="Click to go to my Get in Touch page to contact me.">Get in Touch</a></li>
+              </ul>
+            </nav>
+          </li>
         </ul>
         <hr class="navBorder">
       </nav>
-    
     </header>
 
     <main>
@@ -41,8 +69,17 @@
       <article id="background">
         <h2 id="myBackground" title="My background and upbringing.">My background:</h2>
         <!-- Robot photo-->
-        <figure>
-          <img id="robotPhoto" src="Assets/images/bio/MishaRobot.jpg" alt="Misha working on Tetrix Robots before college." width="370" height="294">
+        <figure id="robFig">
+          <picture id="mishaPicture">
+            <source id="robotPhoto" srcset="Assets/images/bio/MishaRobot_370_294_orig.jpg" width="370" height="294" type="image/jpeg"
+              media="(min-width: 840px)">
+            <source srcset="Assets/images/bio/MishaRobot_300_238.jpg" width="300" height="238" type="image/jpeg"
+              media="(min-width: 641px)">
+            <img src="Assets/images/bio/MishaRobot_250_198.jpg" width="250" height="198" type="image/jpeg" alt="Misha working on Tetrix Robots before college.">
+            <!-- <source srcset="Assets/images/home/misha_headshot_300_243.jpg" width="300" height="243"
+              type="image/jpeg" media="(max-width: 640px)"> -->
+            <!-- <img src="Assets/images/home/misha_headshot.jpg" alt="Head shot photo of Misha." width="512" height="415"> -->
+          </picture>
           <figcaption id="robotCaption" title="Misha examininng his newly-buily robot."><p>Me pre-college, working on motor controllers.</p></figcaption>
         </figure>
           <p id="backgroundP" class="textContent">
@@ -56,8 +93,17 @@
           <h3>Environment:</h3>
           <!-- Shot of hill-->
           <figure id="hill" title="Shot of hillside near home.">
-            <img src="Assets/images/bio/Hill.PNG" alt="A photo of a nearby hill in the mountains of the bay near home." width="515" height="265">
-            <figcaption id="hillCaption" title="A photo Misha took of a nearby hill in the mountains."><p>A nearby hill in the mountains of the bay.</p></figcaption>
+            <picture id="hillPic">
+              <source srcset="Assets/images/bio/Hill_515_265_orig.PNG" width="515" height="265"
+                type="image/png" media="(min-width: 840px)">
+                <!-- type="image/PNG" media="(min-width: 750px)"> -->
+              <source srcset="Assets/images/bio/Hill_400_206.PNG" width="400" height="206" type="image/png"
+                media="(min-width: 641px)">
+              <source srcset="Assets/images/bio/Hill_300_154.PNG" width="300" height="154" type="image/png"
+                media="(min-width: 500px)">
+              <img src="Assets/images/bio/Hill_250_129.PNG" width="250" height="129" type="image/png">
+            </picture>
+            <figcaption id="hillCaption" title="A photo Misha took of a nearby hill in the mountains.">A nearby hill in the mountains of the bay.</figcaption>
           </figure>
           <p title="Inspiring people">
             I have been fortunate to be surrounded by inspiring people, regardless of circumstance, and even if from backgrounds that may seem
@@ -132,11 +178,20 @@
             <h3>Hobbies and Family:</h3>
 
             <!--Shepi and Family-->
-            <section title="Shepi">
+            <section id="shepiSec" title="Shepi">
               <h4>Family:</h4>
               <figure id="shepiImg" title="Shepi Photo">
-                <img alt="A picture of my dad's and my golden retriever, Shepi, an amazing dog." 
-                  src="Assets/images/bio/Pooch.jpg" width="420" height="315" loading="lazy">
+                <picture id="hillPic">
+                  <source srcset="Assets/images/bio/Pooch.jpg" width="420" height="315"
+                    type="image/png" media="(min-width: 840px)">
+                    <!-- type="image/PNG" media="(min-width: 750px)"> -->
+                  <source srcset="Assets/images/bio/Pooch_400_300.jpg" width="400" height="300" type="image/png"
+                    media="(min-width: 750px)">
+                  <source srcset="Assets/images/bio/Pooch_300_225.jpg" width="300" height="225" type="image/png"
+                    media="(min-width: 641px)">
+                  <img src="Assets/images/bio/Pooch_250_188.jpg" alt="A picture of my dad's and my golden retriever, Shepi, an amazing dog."  
+                    width="250" height="188" type="image/png">
+                </picture>
                 <figcaption id="shepiCaption">Shepi the wonder dog.</figcaption>
               </figure>
               <p>
