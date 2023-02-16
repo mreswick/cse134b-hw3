@@ -40,8 +40,6 @@ article section {
   /* background-color: rgb(252, 253, 255); */
   border: 0.12rem solid black;
   border-radius: 1.5rem;
-  padding: 1rem 5% 1.5rem;
-  margin: 1rem 2rem 0;
   box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
 }
 article section a {
@@ -141,6 +139,12 @@ section#canvasExperimentation canvas {
 main {
   width: fit-content;
 }
+@media only screen and (min-width: 640px) {
+  article section {
+    padding: 1rem 5% 1.5rem;
+    margin: 1rem 2rem 0;
+  }
+}
 @media only screen and (max-width: 639px) {
   canvas {
     transform: scale(0.5);
@@ -154,8 +158,8 @@ main {
   section {
     margin: 0;
     padding: 0;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
     padding-left: 1%;
     padding-right: 1%;
   }
