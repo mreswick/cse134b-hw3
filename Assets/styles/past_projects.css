@@ -387,6 +387,7 @@ and (max-width: 1008px) {
     padding: 0;
     padding-left: 2%;
     padding-right: 2%;
+    margin-bottom: 1rem;
   }
   h1 {
     line-height: 1.3rem;
