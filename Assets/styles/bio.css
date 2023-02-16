@@ -398,4 +398,7 @@ p#backgroundP:hover,figure:hover {
     border-width: 0;
     box-shadow: none;
   }
+  article#background figure figcaption p{
+    white-space: normal;
+  }
 }
