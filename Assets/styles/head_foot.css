@@ -537,13 +537,16 @@ ul.mainNavigation > li {
     opacity: 0;
     transition: opacity var(--animation-timing);
     /* translate: -100%; */
-    
+    /* width: 80%; */
     position: absolute;
-    width: 80%;
+    
     /* padding: 1rem; */
-    top: 100%;
     /* left: 50%;  */
-    left: 10%;
+    top: 100%;
+    /* left: 10%; */
+
+    width: 120%;
+    left: -10%;
   }
   /* .hamMenu:has(input:checked) + nav.sub1mainnav { */
   input#lab:checked ~ nav.sub1mainnav {
