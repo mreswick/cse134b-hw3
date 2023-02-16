@@ -263,7 +263,8 @@ hr.navBorder {
   border: 0;
   border-bottom: 0.2rem solid rgb(7, 83, 150);
   /* border-bottom: 0.2rem solid rgb(9, 80, 100); */
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
