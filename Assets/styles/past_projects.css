@@ -135,7 +135,7 @@ audio {
 }
 
 /*robotics and electrical design*/
-section#robEce ul#robEceList {
+section ul#robEceList {
   margin-top: 1rem;
 }
 section#robEce figure, section#robEce figcaption {
@@ -371,6 +371,9 @@ and (max-width: 1008px) {
   }
 }
 @media only screen and (max-width: 640px) {
+  article section#musicContainer ul {
+    margin-bottom: 0;
+  }
   article section {
     margin: 0;
     padding: 0;
@@ -389,13 +392,26 @@ and (max-width: 1008px) {
     padding-right: 2%;
     margin-bottom: 1rem;
   }
+  article section#chessContainer,
+  article section#musicContainer {
+    margin-bottom: 1rem;
+  }
+  article section#robEce ul#robEceList  {
+    margin-top: 0;
+  }
   h1 {
     line-height: 1.3rem;
   }
-  article h2, h3 {
+  h2, h3 {
     line-height: 1.2rem;
     margin-top: 1rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  article section#photos h2 {
+    margin-top: 0;
+  }
+  h4 {
+    margin-top: 1rem;
   }
   article video {
     width: 220px;
