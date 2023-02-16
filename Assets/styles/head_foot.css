@@ -125,7 +125,7 @@ li#mainnavHam input {
   pointer-events: none;
 }
 /* .hamMenu input:checked { */
-li#mainnavHam input#checked {
+li#mainnavHam input:checked {
   background-color: lightblue;
   width: calc(var(--ham-bar-width) + 1rem)
   /* opacity: 0;
