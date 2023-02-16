@@ -423,9 +423,16 @@ p#backgroundP:hover,figure:hover {
     /* justify-self: end; */
   }
   /*stop shepi section border from shrinking*/
-  article#background section#shepiSec figure#shepiImg {
+  /* article#background section#shepiSec figure#shepiImg {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     min-width: fit-content;
-  }
+  } */
+}
+
+/*stop shepi section border from shrinking*/
+article#background section#shepiSec figure#shepiImg {
+  padding-left: 5%;
+  padding-right: 5%;
+  min-width: fit-content;
 }
