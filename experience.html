@@ -14,25 +14,54 @@
   <body>
 
     <header>
-
       <!--Main navigation menu.-->
       <nav class="mainNavigation" title="Menu for main navigation.">
+        <!-- <div class="emptyMainSpacer"></div> -->
         <a class="homeMain" href="index.html" title="Click to go to Home.">M/</a>
         <ul class="mainNavigation">
           <li id="mainnavHome"><a href="index.html" title="Click to go to Home.">Home</a></li>
           <li id="mainnavBio"><a href="bio.html" title="Click to go to my Bio page.">Bio</a></li>
           <li id="mainnavExp"><a href="experience.html" title="Click to stay on my Experience page.">Experience</a></li>
-          <li id="mainnavProj" class="projects">Projects
+          <li id="mainnavProj" class="projects" title="Click to go to my Projects.">Projects
             <ul class="subMainNav">
               <li id="submainnav1"><a href="pastProjects.html" title="Click to go to my Past Projects' page.">Past Projects</a></li>
               <li id="submainnav2"><a href="experiments.html" title="Click to go to my Experiments' page.">Experiments</a></li>
             </ul>
           </li>
-          <li id="#mainanvTouch"><a href="getInTouch.html" title="Click to go to my Get in Touch page to contact me.">Get in Touch</a></li>
+          <li id="mainnavTouch"><a href="getInTouch.html" title="Click to go to my Get in Touch page to contact me.">Get in Touch</a></li>
+          <li id="mainnavHam">
+            <!--Hamburger menu-->
+            <input id="lab" type="checkbox">
+            <label class="hamMenu" for="lab">
+              <div id="di"></div>
+            </label>
+            <!-- <nav class="downNav">
+              <nav>
+                <div>This</div>
+                <div>is</div>
+                <div>the</div>
+                <div>sidebar</div>
+              </nav>
+            </nav> -->
+            <nav class="sub1mainnav">
+              <ul class="upperLevelSubNav1">
+                <li class="l1" id="mainnavExp2"><a href="experience.html" title="Click to stay on my Experience page.">Experience</a></li>
+                <li class="l1">
+                  <details>
+                    <summary title="Click for my Projects.">Projects:</summary>
+                      <ul class="lowerLevelSubNav1">
+                        <li id="submainnav1_2"><a href="pastProjects.html" title="Click to go to my Past Projects' page.">Past Projects</a></li>
+                        <li id="submainnav2_2"><a href="experiments.html" title="Click to go to my Experiments' page.">Experiments</a></li>
+                      </ul>
+                  </details>
+                </li>
+                <li id="mainnavTouch_2" class="l1"><a href="getInTouch.html" title="Click to go to my Get in Touch page to contact me.">Get in Touch</a></li>
+              </ul>
+            </nav>
+          </li>
         </ul>
         <hr class="navBorder">
       </nav>
-    
     </header>
 
     <main>

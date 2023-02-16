@@ -257,3 +257,33 @@ ul#lessonsLearnedList li:hover {
   line-height: 1.6rem; */
   transform: scale(1.08);
 }
+
+main, section {
+  width: fit-content;
+}
+
+@media only screen and (max-width: 639px) {
+  /*no intermediate boundary*/
+  article section#resume {
+    border: none;
+    box-shadow: none;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  h2#hResume {
+    padding-left: 5%;
+  }
+  article section#work,
+  article section#volunteer,
+  article section#techSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  article section#resume {
+    padding: 0;
+    margin: 0;
+  }
+}
