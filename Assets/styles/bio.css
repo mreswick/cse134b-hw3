@@ -369,4 +369,33 @@ p#backgroundP:hover,figure:hover {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
   }
+  /*adjust heading line heights*/
+  article#background h2, h3, h4 {
+    line-height: 1.1rem;
+  }
+  article#background h3, article#background h4 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.4rem;
+  }
+  article#background p#familyPara {
+    margin-bottom: 0.5rem;
+  }
+  /* article#background h3 {
+    line-height: 1.05rem;
+  }
+  article#background h4 {
+    line-height: 1.02rem;
+  }
+  */ 
+  article#background section {
+    padding: 0;
+    margin: 0;
+  }
+  article#background section#environmentSection,
+  article#background section#valuesSec,
+  article#background section#hobFamily {
+    border-style: none;
+    border-width: 0;
+    box-shadow: none;
+  }
 }
