@@ -133,7 +133,7 @@ li#mainnavHam input:checked {
 }
 /*animation hamburger to X and vice versa*/
 /* .hamMenu:has(input:checked)::before { */
-input:checked + .hamMenu {
+input:checked ~ .hamMenu {
 /* .hamMenu input:checked::before { */
   /* rotate: 45deg;
   background-color: red;
@@ -142,9 +142,9 @@ input:checked + .hamMenu {
   /* translate: 0 calc(var(--ham-bar-height) / -2); */
   background-color: red;
 }
-input:checked + .hamMenu {
+/* input:checked ~ .hamMenu {
   background-color: red;
-}
+} */
 .hamMenu:has(input:checked)::after {
 /* .hamMenu input:checked::after { */
   /* background-color: red; */
