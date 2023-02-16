@@ -371,7 +371,7 @@ p#backgroundP:hover,figure:hover {
   }
   /*adjust heading line heights*/
   article#background h2, h3, h4 {
-    line-height: 1.1rem;
+    line-height: 1.2rem;
   }
   article#background h3, article#background h4 {
     margin-top: 0.3rem;
@@ -400,5 +400,32 @@ p#backgroundP:hover,figure:hover {
   }
   article#background figure figcaption p{
     white-space: normal;
+  }
+  /*aside after content*/ 
+  section#environmentSection div#pWithAside {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column-reverse;
+  }
+  section#environmentSection p#pNextToAside {
+    display: block;
+  }
+  section#environmentSection aside {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    display: block;
+    text-indent: 2rem;
+    background-color: grey;
+    border-radius: 1rem;
+    min-width: fit-content;
+    /* justify-self: end; */
+  }
+  /*stop shepi section border from shrinking*/
+  article#background section#shepiSec figure#shepiImg {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    min-width: fit-content;
   }
 }
