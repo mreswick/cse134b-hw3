@@ -111,9 +111,9 @@ div#di
   /*transition/animation*/
   transform-origin: left center;
   -moz-transform-origin: left center;
-  /* transition: opacity var(--animation-timing), width var(--animation-timing),
+  transition: opacity var(--animation-timing), width var(--animation-timing),
    rotate var(--animation-timing), translate var(--animation-timing),
-   background-color var(--animation-timing); */
+   background-color var(--animation-timing);
   /* -moz-transition: opacity var(--animation-timing), width var(--animation-timing),
   rotate var(--animation-timing), translate var(--animation-timing),
   background-color var(--animation-timing); */
@@ -131,27 +131,32 @@ li#mainnavHam input {
 }
 /* .hamMenu input:checked { */
 li#mainnavHam input:checked {
-  background-color: lightblue;
-  /* width: calc(var(--ham-bar-width) + 1rem) */
-  /* opacity: 0;
-  width: 0; */
+  /* background-color: lightblue;
+  width: calc(var(--ham-bar-width) + 1rem) */
+  opacity: 0;
+  width: 0;
 }
 /*animation hamburger to X and vice versa*/
 /* .hamMenu:has(input:checked)::before { */
 input:checked ~ .hamMenu::before {
 /* .hamMenu input:checked::before { */
-  /* rotate: 45deg;
+  rotate: 45deg;
   background-color: red;
-  width: var(--ham-x-width); */
-  /*offset up by height/2 of bar*/
-  /* translate: 0 calc(var(--ham-bar-height) / -2); */
-  background-color: red;
+  width: var(--ham-x-width);
+  /*offset up by height/2 of bar*/ 
+  translate: 0 calc(var(--ham-bar-height) / -2);
+  /* background-color: red; */
 }
 /* input:checked ~ .hamMenu {
   background-color: red;
 } */
 input:checked ~ .hamMenu::after {
   background-color: red;
+  rotate: -45deg; 
+  /* rotate the opposite direction*/
+  width: var(--ham-x-width);
+  /*offset down by height/2 of bar*/ 
+  translate: 0 calc(var(--ham-bar-height) / 2);
 }
 .hamMenu:has(input:checked)::after {
 /* .hamMenu input:checked::after { */
