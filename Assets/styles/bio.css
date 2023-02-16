@@ -229,9 +229,9 @@ section#valuesSec ol#valuesList {
 section#valuesSec ol#valuesList li {
   margin-bottom: 0.5rem;
 }
-article section#hobFamily figure#shepiImg {
+/* article section#hobFamily figure#shepiImg {
   min-width: 440px;
-}
+} */
 
 /*Hobbies and Family*/
 article section#hobbiesSec p#hobTopP {
