@@ -281,6 +281,7 @@ main, section {
   }
   h2 {
     margin-bottom: 1.5rem;
+    line-height: 1.2rem;
   }
   h2#hResume {
     padding-left: 5%;
@@ -305,6 +306,8 @@ main, section {
   article section#lessonsLearned {
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   main {
     padding: 1%;
@@ -356,11 +359,6 @@ main, section {
   section table#techSkillsTable th {
     font-weight: bold;
   }
-  section table#techSkillsTable td.col3,
-  section table#techSkillsTable th.col3 {
-    /* width: 30%; */
-    /* border-left: 0.3rem solid black; */
-  }
   section table#techSkillsTable tr:nth-child(even) {
     background-color: rgb(67, 122, 200);
   }
@@ -376,6 +374,11 @@ main, section {
 
   section table#techSkillsTable td {
     text-align: center;
+  }
+  section table#techSkillsTable td,
+  section table#techSkillsTable th
+  {
+    padding: 1rem;
   }
   /* - rounded table corners*/
   section table#techSkillsTable th#langToolColHeader {
