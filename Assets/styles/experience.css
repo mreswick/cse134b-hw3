@@ -85,8 +85,8 @@ section#lessonsLearned h2 {
 
 /*Resume section*/
 section#resume {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /*Misha info card*/
 ul#mishaInfoCardList {
@@ -109,8 +109,12 @@ section#education ul#ucsdList {
   margin-bottom: 0.8rem;
 }
 /*Work + Volunteer*/
+section#work, section#volunteer, section#techSkills {
+  align-items: start;
+  width: 80%;
+}
 section#work ul, section#volunteer ul {
-  margin: 0.5rem 0.7rem 0;
+  margin: 0.5rem 0rem;
 }
 section#work > ul > li.firstWorkItem, section#volunteer > ul > li.firstWorkItem {
   list-style-type: initial;
@@ -195,15 +199,61 @@ section table#techSkillsTable tr#Git td.col1 {
 section table#techSkillsTable tr#Git td.col3 {
   border-bottom-right-radius: 1rem;
 }
-
 /*Lessons Learned*/
 section#lessonsLearned h2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 section#lessonsLearned ul#lessonsLearnedList {
-  margin: 0.5rem 0.7rem 0 12%;
+  margin: 0.5rem 0.7rem 0 10%;
 }
 section#lessonsLearned ul#lessonsLearnedList li{
   margin-bottom: 0.7rem;
+}
+
+
+section.innerCard {
+  margin: 0.5rem 1.5rem 1.6rem;
+  border: 0.2rem solid black;
+}
+section#lessonsLearned {
+  box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
+  /* background-color: rgb(178, 220, 237); */
+  font-weight: 500;
+  background-color: rgb(226, 242, 255);
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+/* section#lessonsLearned {
+  border: 0.12rem solid black;
+  border-radius: 1.5rem;
+  padding: 1rem 5% 1.5rem;
+  margin: 1rem 2rem 0;
+  box-shadow: 0.2rem 0.2rem rgb(7, 83, 140);
+} */
+h2#lessonsH {
+  margin-bottom: 2rem;
+}
+ul#lessonsLearnedList li {
+  margin: 1.5rem 1rem 1rem;
+  font-size: 1.05rem;
+}
+/*animation*/
+/*make text larger in article section*/
+h1, h2, h3,div#infoCard,article section.innerCard,
+ul#lessonsLearnedList li {
+  /* font-size: 1rem;
+  line-height: 1.1rem;
+  transition: font-size 4s 1s;
+  transition: line-height 4s 1s; */
+  transition: transform;
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+}
+h1:hover, h2:hover, h3:hover,
+div#infoCard:hover,article section.innerCard:hover,
+ul#lessonsLearnedList li:hover {
+  /* font-size: 1.5rem;
+  line-height: 1.6rem; */
+  transform: scale(1.08);
 }

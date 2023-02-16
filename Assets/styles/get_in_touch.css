@@ -38,6 +38,7 @@ article {
   /*style*/
   background-color: white;
   padding: 1rem 2rem 0.5rem;
+  width: 100%;
 
 }
 article section {
@@ -71,9 +72,16 @@ article div.contactCard p#nameP {
   font-size: 1.3rem;
 }
 section#contactForm p#headP {
-  margin-left: 0;
+  margin-left: 1.2rem;
   margin-top: 0.3rem;
   margin-bottom: 0.7rem;
+  align-self: start;
+}
+section#contactForm span.labelContent {
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+  display: block;
+  text-align: center;
 }
 form fieldset legend {
   font-style: italic;
@@ -95,18 +103,22 @@ h2 {
   margin-bottom: 0.3rem;
   font-size: 1.4rem;
 }
-form label {
+form label, p#headP {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
 }
 
 /*form*/
 form fieldset#introFormFields {
+  display: block;
   padding: 1rem;
   border: 0.2rem solid black;
   border-radius: 1rem;
   background-color: rgb(196, 211, 236);
   align-self: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 80%;
 }
 form fieldset#introFormFields legend {
   float: left;
@@ -127,23 +139,37 @@ form details summary {
 form details span {
   display: block;
   margin: 0.5rem 0 0.5rem;
+  overflow-wrap: normal;
 }
 form input {
   display: block;
   margin-left: 2.3rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid black;
+  background-color: white;
+  font-weight: 500;
+  color: black;
 }
 form select {
   display: block;
-  margin-left: 2rem;
+  margin-left: 2.3rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color:rgb(216, 231, 255);
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
 }
 form select optgroup, form datalist option {
   /* border: 1rem solid rgb(7, 83, 140); */
   background-color: rgb(189, 223, 255);
   /* height: 10%; */
+}
+form label#lastFormLabel {
+  text-align: center;
 }
 /* form select form details summary span.detailsContent{
   display: block;
@@ -157,6 +183,9 @@ form span#mainMessageLabel {
   display: block;
   text-align: center;
   margin: 1rem 0.1rem 1rem;
+}
+form textarea#mainMessage {
+  width: 80%;
 }
 
 form {
