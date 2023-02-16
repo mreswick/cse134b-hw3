@@ -371,6 +371,10 @@ and (max-width: 1008px) {
   }
 }
 @media only screen and (max-width: 640px) {
+  article section {
+    margin: 0;
+    padding: 0;
+  }
   article section#Websites-and-Soundscapes,
   article section#robEce,
   article section#photos,
@@ -386,7 +390,7 @@ and (max-width: 1008px) {
     margin-bottom: 0.2rem;
   }
   article video {
-    width: 250px;
+    width: 220px;
   }
   section#photos picture,
   section#photos picture source,
@@ -396,8 +400,8 @@ and (max-width: 1008px) {
     height: calc(var(--pic-height) * 0.5);
   }
   article iframe {
-    width: calc(var(--iframe-width) * 0.3);
-    height: calc(var(--iframe-height) * 0.3);
+    width: calc(var(--iframe-width) * 0.4);
+    height: calc(var(--iframe-height) * 0.4);
   }
   section#robEce div.vidCont, 
   section#robEce div.iframeCont,
