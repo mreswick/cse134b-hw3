@@ -11,11 +11,11 @@ main {
   /*style*/
   border: 0.2rem solid black;
   border-radius: 1rem;
-  margin: 1rem 5% 2rem;
+  /* margin: 1rem 5% 2rem; */
   background-color: white;
   box-shadow: 0.4rem 0.5rem rgb(7, 83, 140);
   margin-top: 1rem;
-  padding: 0 3% 0;
+  /* padding: 0 3% 0; */
   /* min-width: 75%; */
   /*font*/
   font-weight: normal;
@@ -55,7 +55,7 @@ article figure {
 }
 article section p {
   text-align: start;
-  text-indent: 2rem;
+  /* text-indent: 2rem; */
   margin-bottom: 1rem;
 }
 article ul {
@@ -103,9 +103,9 @@ section pre {
   background-color: rgb(165, 165, 165);
   border: 0.2rem solid rgb(38, 49, 67);
   border-radius: 2rem;
-  width: 50%;
+  /* width: 50%;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 1rem; */
 }
 
 /*canvas experimentation*/
@@ -134,6 +134,18 @@ main {
   width: fit-content;
 }
 @media only screen and (min-width: 640px) {
+  pre {
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  article section p {
+    text-indent: 2rem;
+  }
+  main {
+    margin: 1rem 5% 2rem;
+    padding: 0 3% 0;
+  }
   article section {
     padding: 1rem 5% 1.5rem;
     margin: 1rem 2rem 0;
@@ -147,9 +159,17 @@ main {
   
 }
 @media only screen and (max-width: 639px) {
+  pre {
+    width: fit-content;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
   /* main {
     font-size: 19px;
   } */
+  article section p {
+    text-indent: 3%;
+  }
   article header p#headP {
     text-indent: 2%;
     margin-top: 1.5rem;
