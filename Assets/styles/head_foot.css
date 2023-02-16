@@ -23,6 +23,10 @@ header a:hover, li#mainnavProj:hover {
   color: rgb(0, 166, 255);
   /* color: rgb(0, 153, 255); */
 }
+html, body {
+  overflow: hidden;
+}
+
 
 /* footer */
 hr#footHr {
