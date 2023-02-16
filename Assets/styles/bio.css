@@ -311,6 +311,14 @@ p#backgroundP:hover,figure:hover {
     border-style: none;
   }
 } */
+
+@media only screen and (min-width: 1008px) {
+  article#background section#shepiSec {
+    margin: 1rem 0 0;
+  }
+}
+
+
 /*get rid of middle border for smaller screens*/ 
 @media only screen and (max-width: 1007px) {
   section#shepiSec, section#hobbiesSec {
@@ -322,6 +330,9 @@ p#backgroundP:hover,figure:hover {
   }
   p#familyPara {
     margin-bottom: 0;
+  }
+  article#background section#shepiSec {
+    margin: 0;
   }
 }
 
