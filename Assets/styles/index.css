@@ -173,4 +173,16 @@ footer#amznOffer:hover {
 }
 
 
+/*for mobile*/
+@media only screen and (max-width: 640px) {
+  /* * {
+    font-size: 4rem;
+  } */
+
+
+
+
+}
+
+
 

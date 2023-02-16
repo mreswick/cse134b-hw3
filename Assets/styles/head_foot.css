@@ -209,19 +209,34 @@ input:checked ~ .hamMenu::after {
 /* nav header menu styling */
 header nav.mainNavigation {
   /*grid*/
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 5fr 1fr;
   grid-template-rows: 1fr 0.2fr;
-  grid-template-areas: 
+  grid-template-areas:  */
     /* "headerPic emptySpacer emptySpacer emptySpacer" */
-    "homeMain homeMain mainNavigation mainNavigation"
-    "botBord botBord botBord botBord";
+    /* "homeMain homeMain mainNavigation mainNavigation"
+    "botBord botBord botBord botBord"; */
   /*font*/
   font-size: 1.2rem;
   /*background*/
   /*background-color: rgb(240, 240, 240);*/ 
   border-radius: 1em;
 }
+/*overall main nav grid only if not for small screen*/
+@media only screen and (min-width: 640px) {
+  header nav.mainNavigation {
+    /*grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-areas: 
+      /* "headerPic emptySpacer emptySpacer emptySpacer" */
+      "homeMain homeMain mainNavigation mainNavigation"
+      "botBord botBord botBord botBord";
+  }
+}
+
+
 header {
   /*background-color: rgb(210, 210, 210);*/ 
   /*background-color: rgb(20,20,20);*/
@@ -491,6 +506,27 @@ ul.mainNavigation > li {
 }
 
 @media only screen and (max-width: 640px) {
+  :root {
+    font-size: 24px;
+  }
+  a.homeMain {
+    margin-left: 2rem;
+  }
+  /*display M above menu*/
+  nav.mainNavigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  nav.mainNavigation a.homeMain {
+    display: block;
+  }
+  nav.mainNavigation ul.mainNavigation {
+    /* display: block; */
+  }
+
+
   /*main nav*/
   header ul.mainNavigation {
     /*align to give more room*/
@@ -545,8 +581,8 @@ ul.mainNavigation > li {
     top: 100%;
     /* left: 10%; */
 
-    width: 120%;
-    left: -10%;
+    width: 130%;
+    left: -15%;
   }
   /* .hamMenu:has(input:checked) + nav.sub1mainnav { */
   input#lab:checked ~ nav.sub1mainnav {
@@ -556,8 +592,9 @@ ul.mainNavigation > li {
   nav.sub1mainnav ul.upperLevelSubNav1 {
     list-style-type: none;
     background-color: rgb(9, 21, 61); 
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-radius: 1.5rem;
+    /* border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem; */
     padding: 1rem;
   }
   nav.sub1mainnav ul.upperLevelSubNav1 li.l1 {
