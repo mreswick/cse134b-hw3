@@ -545,7 +545,8 @@ ul.mainNavigation > li {
     /* left: 50%;  */
     left: 10%;
   }
-  .hamMenu:has(input:checked) + nav.sub1mainnav {
+  /* .hamMenu:has(input:checked) + nav.sub1mainnav { */
+  input#lab:checked ~ nav.sub1mainnav {
     /* translate: 0; */
     opacity: 95%;
   }
