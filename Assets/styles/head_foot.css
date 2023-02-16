@@ -132,12 +132,14 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
 /* .hamMenu:has(input:checked)::before { */
 .hamMenu input:checked::before {
   rotate: 45deg;
+  background-color: red;
   width: var(--ham-x-width);
   /*offset up by height/2 of bar*/
   translate: 0 calc(var(--ham-bar-height) / -2);
 }
 /* .hamMenu:has(input:checked)::after { */
 .hamMenu input:checked::after {
+  background-color: red;
   rotate: -45deg; /*rotate the opposite direction*/
   width: var(--ham-x-width);
   /*offset down by height/2 of bar*/
