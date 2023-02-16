@@ -469,11 +469,11 @@ ul.mainNavigation > li {
     /* translate: -100%; */
     
     position: absolute;
-    width: 80%;
+    width: 60%;
     /* padding: 1rem; */
     top: 100%;
     /* left: 50%;  */
-    left: 10%;
+    left: 20%;
   }
   /* .hamMenu:has(input:checked) + nav.sub1mainnav { */
   input#lab:checked ~ nav.sub1mainnav {
