@@ -132,13 +132,15 @@ li#mainnavHam input:checked {
   width: 0; */
 }
 /*animation hamburger to X and vice versa*/
-.hamMenu:has(input:checked)::before {
+/* .hamMenu:has(input:checked)::before { */
+li#mainnavHam input:checked + label.hamMenu::before {
 /* .hamMenu input:checked::before { */
   /* rotate: 45deg;
   background-color: red;
   width: var(--ham-x-width); */
   /*offset up by height/2 of bar*/
   /* translate: 0 calc(var(--ham-bar-height) / -2); */
+  background-color: red;
 }
 .hamMenu:has(input:checked)::after {
 /* .hamMenu input:checked::after { */
