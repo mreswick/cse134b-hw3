@@ -114,19 +114,25 @@ section#work, section#volunteer, section#techSkills {
   /* width: 80%; */
 }
 section#work ul, section#volunteer ul {
-  margin: 0.5rem 2%;
-  text-align: start;
+  margin: 0.2rem 2% 0.8rem 8%;
+  /* text-align: center; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; */
 }
 section#work > ul > li.firstWorkItem, section#volunteer > ul > li.firstWorkItem {
   list-style-type: initial;
 }
 section#work > ul > li, section#volunteer > ul > li {
   list-style-type: none;
+  text-align: start;
 }
 section#work > ul ul, section#volunteer > ul ul {
   list-style-position: inside;
   /* padding-left: 0.5rem; */
   padding-left: 1%;
+  display: block;
 }
 
 @media only screen and (min-width: 640px) {
@@ -207,7 +213,7 @@ section#work > ul ul, section#volunteer > ul ul {
 
 /*Lessons Learned*/
 section#lessonsLearned h2 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 section#lessonsLearned ul#lessonsLearnedList {
@@ -283,7 +289,7 @@ main, section {
   }
   h2 {
     margin-bottom: 1.5rem;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
   }
   h2#hResume {
     padding-left: 5%;
@@ -306,10 +312,13 @@ main, section {
   article section#volunteer,
   article section#techSkills,
   article section#lessonsLearned {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     padding-left: 1%;
     padding-right: 1%;
+  }
+  article section#techSkills {
+    margin-top: 1.5rem;
   }
   main {
     padding: 1%;
