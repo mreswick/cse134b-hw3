@@ -138,6 +138,9 @@ section#canvasExperimentation canvas {
   background-color: white;
 }
 
+main {
+  width: fit-content;
+}
 @media only screen and (max-width: 639px) {
   canvas {
     transform: scale(0.5);
@@ -148,6 +151,7 @@ section#canvasExperimentation canvas {
     padding-right: 3rem;
     transform: scale(0.5);
   }
+  
 }
 
 
