@@ -306,4 +306,82 @@ main, section {
     padding: 1%;
     width: fit-content;
   }
+
+  /*Tech Skills*/
+  section#techSkills {
+    padding-bottom: 0.3rem;
+  }
+  section table#techSkillsTable {
+    margin: 0.5rem 0;
+    /*table as flow container*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  section table#techSkillsTable tbody {
+      /*style*/
+      border: 0.2rem solid black;
+      border-radius: 1rem;
+      padding: 0.4rem;
+  }
+
+  section table#techSkillsTable > caption {
+    margin: 0.2rem 1rem 0.7rem;
+    text-align: start;
+  }
+  section table#techSkillsTable > tr {
+    display: block;
+
+  }
+  /* section  col {
+    padding: 0.1rem 0.3rem;
+  } */
+  /* section#techSkills colgroup#cols col {
+    background-color: blue;
+    width: 30%;
+    border-left: 0.3rem solid black;
+  } */
+  section table#techSkillsTable td,
+  section table#techSkillsTable th {
+    padding: 0;
+    width: fit-content;
+    font-weight: 500;
+    /* border-left: 0.3rem solid black; */
+  }
+  section table#techSkillsTable th {
+    font-weight: bold;
+  }
+  section table#techSkillsTable td.col3,
+  section table#techSkillsTable th.col3 {
+    /* width: 30%; */
+    /* border-left: 0.3rem solid black; */
+  }
+  section table#techSkillsTable tr:nth-child(2) {
+    background-color: rgb(67, 122, 200);
+  }
+  section table#techSkillsTable tr:nth-child(1) {
+    background-color: rgb(145, 201, 250);
+  }
+  /*don't display last column*/
+  section table#techSkillsTable tr:nth-child(3) {
+    display: none;
+  }
+
+  section table#techSkillsTable td {
+    text-align: center;
+  }
+  /* - rounded table corners*/
+  section table#techSkillsTable th#langToolColHeader {
+    border-top-left-radius: 1rem;
+  }
+  section table#techSkillsTable th#lvlMasteryColHeader {
+    border-top-right-radius: 1rem;
+  }
+  section table#techSkillsTable tr#Git td.col1 {
+    border-bottom-left-radius: 1rem;
+  }
+  section table#techSkillsTable tr#Git td.col2 {
+    border-bottom-right-radius: 1rem;
+  }
 }
