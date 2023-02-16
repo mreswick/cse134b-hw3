@@ -381,8 +381,8 @@ and (max-width: 1008px) {
     padding: 0;
   }
   article h2, h3 {
-    line-height: 1.1rem;
-    margin-top: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
     margin-bottom: 0.2rem;
   }
   article video {
@@ -396,8 +396,8 @@ and (max-width: 1008px) {
     height: calc(var(--pic-height) * 0.5);
   }
   article iframe {
-    width: calc(var(--iframe-width) * 0.5);
-    height: calc(var(--iframe-height) * 0.5);
+    width: calc(var(--iframe-width) * 0.3);
+    height: calc(var(--iframe-height) * 0.3);
   }
   section#robEce div.vidCont, 
   section#robEce div.iframeCont,
