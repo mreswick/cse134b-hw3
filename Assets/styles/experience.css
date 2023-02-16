@@ -111,7 +111,7 @@ section#education ul#ucsdList {
 /*Work + Volunteer*/
 section#work, section#volunteer, section#techSkills {
   align-items: start;
-  width: 80%;
+  /* width: 80%; */
 }
 section#work ul, section#volunteer ul {
   margin: 0.5rem 0rem;
@@ -173,7 +173,7 @@ section table#techSkillsTable th {
 }
 section table#techSkillsTable td.col3,
 section table#techSkillsTable th.col3 {
-  width: 30%;
+  /* width: 30%; */
   /* border-left: 0.3rem solid black; */
 }
 section table#techSkillsTable tr:nth-child(even) {
