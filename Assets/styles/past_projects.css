@@ -160,12 +160,12 @@ section#robEce video, section#robEce iframe {
   padding: 1rem 0;
   border:  none;
 }
-section#robEce div.videoCont {
+/* section#robEce div.videoCont {
   min-width: 420px;
 }
 section#robEce div.iframeCont {
   min-width: 580px;
-}
+} */
 
 /*photos*/
 p#pHead {
@@ -192,7 +192,7 @@ section#photos figure#lastPhotoFig picture {
 }
 section#photos figure figcaption {
   margin-top: 0.5rem;
-  width: 60%;
+  /* width: 60%; */
 }
 
 /*videos*/
@@ -202,7 +202,8 @@ section#videos ul {
 section#videos figure, section#videos figcaption {
   display: inline;
 }
-section#videos div.iframeCont {
+section#videos div.iframeCont
+{
   /*flex (to center video/iframe)*/
   display: flex;
   flex-direction: column;
@@ -215,20 +216,30 @@ section#videos div.iframeCont {
   padding: 0.5rem;
   background-color: rgb(0, 90, 138)
 }
+section#videos figure {
+  /*flex (to center video/iframe)*/
+  display: flex-inline;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
 section#videos iframe {
-  display: block;
+  border: none;
+}
+/* section#videos iframe {
+  display: block; */
   /*style*/
-  padding: 1rem 0;
+  /* padding: 1rem 0;
   border:  none;
-}
-section#videos div#cat2VidDiv {
+} */
+/* section#videos div#cat2VidDiv {
   min-width: 580px;
-}
+} */
 section#videos li#preColVidLi {
   margin-bottom: 0;
 }
 section#videos div#preColVidDiv {
-  min-width: 580px;
+  /* min-width: 580px; */
   margin-bottom: 1rem;
 }
 section#videos {
@@ -287,4 +298,128 @@ section#videos figure:hover,
 section#photos figcaption:hover,
 picture:hover {
   transform: scale(1.1);
+}
+
+:root {
+  --iframe-width: 560px;
+  --iframe-height: 315px;
+  --mae-vid-width: 1280px;
+  --mae-vid-height: 720px;
+  --pic-width: 500px;
+  --pic-height: 334px;
+}
+
+section#robEce div.vidCont, 
+section#robEce div.iframeCont,
+section#videos div.iframeCont {
+    width: fit-content;
+  }
+
+@media only screen and (min-width: 840px) {
+  article iframe {
+    width: calc(var(--iframe-width) * 0.8);
+    height: calc(var(--iframe-height) * 0.8);
+  }
+}
+@media only screen and (min-width: 641px)
+and (max-width: 839px) {
+  article iframe {
+    width: calc(var(--iframe-width) * 0.55);
+    height: calc(var(--iframe-height) * 0.55);
+  }
+}
+@media only screen and (min-width: 641px) 
+and (max-width: 1008px) {
+  section#robEce div.vidCont, 
+  section#robEce div.iframeCont,
+  section#videos div.iframeCont,
+  section#photos figure#lastPhotoFig
+  {
+    width: fit-content;
+    /* padding-left: 0.5rem;
+    padding-right: 0.5rem; */
+    padding: 1rem;
+    margin: 1rem;
+  }
+  /* article iframe {
+    width: calc(var(--iframe-width) * 0.8);
+    height: calc(var(--iframe-height) * 0.8);
+  } */
+  /* article video {
+    width: calc(var(--mae-vid-width) * 0.2px);
+    height: calc(var(--mae-vid-height) * 0.2px);
+  } */
+  article video {
+    width: 300px;
+  }
+  section#photos picture,
+  section#photos picture source,
+  section#photos picture img
+  {
+    width: calc(var(--pic-width) * 0.6);
+    height: calc(var(--pic-height) * 0.6);
+  }
+  article section#Websites-and-Soundscapes,
+  article section#robEce,
+  article section#photos,
+  article section#videos {
+    width: fit-content;
+    padding: 1%;
+  }
+  section#photos figure#lastPhotoFig {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  article section#Websites-and-Soundscapes,
+  article section#robEce,
+  article section#photos,
+  article section#videos {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  article h2, h3 {
+    line-height: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  article video {
+    width: 250px;
+  }
+  section#photos picture,
+  section#photos picture source,
+  section#photos picture img
+  {
+    width: calc(var(--pic-width) * 0.5);
+    height: calc(var(--pic-height) * 0.5);
+  }
+  article iframe {
+    width: calc(var(--iframe-width) * 0.5);
+    height: calc(var(--iframe-height) * 0.5);
+  }
+  section#robEce div.vidCont, 
+  section#robEce div.iframeCont,
+  section#videos div.iframeCont,
+  section#photos figure#lastPhotoFig {
+    width: fit-content;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  main {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  section#photos figure#lastPhotoFig picture {
+    margin-bottom: 0.5rem;
+  }
+}
+
+main {
+  min-width: fit-content;
+}
+
+main article section figure {
+  min-width: fit-content;
 }
