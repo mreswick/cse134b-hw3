@@ -95,8 +95,8 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
   /*animation*/
   --ham-x-width: calc(var(--ham-height) * 1.41421356237) /*times sqrt(2), based on height and 45deg*/
 }
-.hamMenu::before,
-.hamMenu::after,
+.hamMenu input::before,
+.hamMenu input::after,
 .hamMenu input {
   content: ""; /*to show up with content*/
   width: var(--ham-bar-width);
