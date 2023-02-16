@@ -93,6 +93,7 @@ ul#mishaInfoCardList {
   list-style-type: none;
   text-align: start;
   margin: 0.3rem 0;
+  margin-left: 3%;
 }
 /*Education*/
 article section#education {
