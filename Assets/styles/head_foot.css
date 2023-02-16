@@ -95,8 +95,8 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
   /*animation*/
   --ham-x-width: calc(var(--ham-height) * 1.41421356237) /*times sqrt(2), based on height and 45deg*/
 }
-.hamMenu input::before,
-.hamMenu input::after,
+.hamMenu::before,
+.hamMenu::after,
 .hamMenu input {
   content: ""; /*to show up with content*/
   width: var(--ham-bar-width);
@@ -124,26 +124,28 @@ https://www.youtube.com/watch?v=dAIVbLrAb_U*/
   pointer-events: none;
 }
 .hamMenu input:checked {
-  background-color: red;
+  background-color: lightblue;
+  width: calc(var(--ham-bar-width) + 1rem)
   /* opacity: 0;
   width: 0; */
 }
 /*animation hamburger to X and vice versa*/
-/* .hamMenu:has(input:checked)::before { */
-.hamMenu input:checked::before {
-  rotate: 45deg;
+.hamMenu:has(input:checked)::before {
+/* .hamMenu input:checked::before { */
+  /* rotate: 45deg;
   background-color: red;
-  width: var(--ham-x-width);
+  width: var(--ham-x-width); */
   /*offset up by height/2 of bar*/
-  translate: 0 calc(var(--ham-bar-height) / -2);
+  /* translate: 0 calc(var(--ham-bar-height) / -2); */
 }
-/* .hamMenu:has(input:checked)::after { */
-.hamMenu input:checked::after {
-  background-color: red;
-  rotate: -45deg; /*rotate the opposite direction*/
-  width: var(--ham-x-width);
+.hamMenu:has(input:checked)::after {
+/* .hamMenu input:checked::after { */
+  /* background-color: red; */
+  /* rotate: -45deg;  */
+    /*rotate the opposite direction*/
+  /* width: var(--ham-x-width); */
   /*offset down by height/2 of bar*/
-  translate: 0 calc(var(--ham-bar-height) / 2);
+  /* translate: 0 calc(var(--ham-bar-height) / 2); */
 }
 
 /*nav menu "sidebar" that slides down*/
