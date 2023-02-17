@@ -9,7 +9,7 @@
 }
 :root {
   font-size: 16px;
-  font: sans-serif;
+  font-family: "Times New Roman", sans-serif;
 }
 main {
   line-height: 1.1rem;
@@ -333,7 +333,7 @@ ul.mainNavigation > li {
   /* border-right: 0.2rem solid white; */
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1007px) {
   /*main nav*/
   header ul.mainNavigation {
     grid-template-columns: 1fr 1fr 1fr 2fr 18ex;
@@ -423,7 +423,7 @@ ul.mainNavigation > li {
   }
 }
 
-@media only screen and (max-width: 1008px) and (min-width: 641px) {
+@media only screen and (max-width: 1008px) and (min-width: 640px) {
   /*main nav*/
   header ul.mainNavigation {
     grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -383,6 +383,12 @@ and (max-width: 1008px) {
   section#photos figure#lastPhotoFig {
     margin-bottom: 0.5rem;
   }
+  section#photos figure#lastPhotoFig figcaption {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 @media only screen and (max-width: 640px) {
   article section#musicContainer ul {

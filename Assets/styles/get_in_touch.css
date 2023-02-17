@@ -1,6 +1,9 @@
 /*main page content*/
 body {
   background-color: rgb(240, 240, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
