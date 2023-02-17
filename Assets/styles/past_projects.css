@@ -455,12 +455,12 @@ and (max-width: 1008px) {
   section#photos picture source,
   section#photos picture img
   {
-    width: calc(var(--pic-width) * 0.65);
-    height: calc(var(--pic-height) * 0.65);
+    width: calc(var(--pic-width) * 0.5);
+    height: calc(var(--pic-height) * 0.5);
   }
   article iframe {
-    width: calc(var(--iframe-width) * 0.5);
-    height: calc(var(--iframe-height) * 0.5);
+    width: calc(var(--iframe-width) * 0.4);
+    height: calc(var(--iframe-height) * 0.4);
   }
   section#robEce div.vidCont, 
   section#robEce div.iframeCont,
