@@ -384,9 +384,9 @@ p#backgroundP:active,figure:active
     padding-bottom: 0.2rem;
     margin-bottom: 0.2rem;
   }
-  main article#background h2#myBackground {
+  /* main article#background h2#myBackground {
     text-align: center;
-  }
+  } */
   main {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
