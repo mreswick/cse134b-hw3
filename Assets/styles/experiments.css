@@ -180,6 +180,8 @@ main {
   }
   canvas {
     transform: scale(0.5);
+    width: 200px;
+    height: 75;
   }
   section#codingStyles pre {
     width: fit-content;
