@@ -177,18 +177,19 @@ section#work > ul ul, section#volunteer > ul ul {
   section table#techSkillsTable td,
   section table#techSkillsTable th {
     padding: 0.5rem 0.3rem;
-    width: 35%;
+    /* width: 35%; */
+    width: fit-content;
     font-weight: 500;
     /* border-left: 0.3rem solid black; */
   }
   section table#techSkillsTable th {
     font-weight: bold;
   }
-  section table#techSkillsTable td.col3,
-  section table#techSkillsTable th.col3 {
+  /* section table#techSkillsTable td.col3,
+  section table#techSkillsTable th.col3 { */
     /* width: 30%; */
     /* border-left: 0.3rem solid black; */
-  }
+  /* } */
   section table#techSkillsTable tr:nth-child(even) {
     background-color: rgb(67, 122, 200);
   }
