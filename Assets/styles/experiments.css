@@ -218,7 +218,7 @@ main {
     margin-left: 2%;
     margin-right: 2%;
     overflow-wrap: break-word;
-    white-space: break-spaces;
+    white-space: anywhere;
   }
   
 
