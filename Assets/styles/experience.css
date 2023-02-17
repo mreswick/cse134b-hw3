@@ -487,6 +487,7 @@ article section#techSkills {
   h1 {
     margin-right: 3%;
     overflow-wrap: break-word;
+    font-size: 18px;
   }
   h2#hResume {
     margin-left: 0;
