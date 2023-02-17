@@ -280,7 +280,68 @@ main, section {
   width: fit-content;
 }
 
-@media only screen and (max-width: 639px) {
+/* article section#resume,
+  article section#education,
+  article section#work,
+  article section#volunteer,
+  article section#techSkills,
+  article section#lessonsLearned {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+  } */
+h2 {
+  margin-bottom: 0.3rem;
+  line-height: 1.3rem;
+}
+article section#techSkills {
+  margin-top: 1.5rem;
+}
+@media only screen and (max-width: 1008px) and (min-width: 640px) {
+  
+  article section#work,
+  article section#volunteer,
+  article section#techSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  section table#techSkillsTable {
+    margin: 0.5rem 0;
+    /*table as flow container*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  article section#resume,
+  article section#education,
+  article section#work,
+  article section#volunteer,
+  article section#techSkills,
+  article section#lessonsLearned {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  /*no intermediate boundary*/
+  article section#resume,
+  article section#techSkills table#techSkillsTable tbody
+  {
+    border: none;
+    box-shadow: none;
+    padding-left: 2%;
+    padding-right: 2%
+  }
+  article section#techSkills {
+    margin-top: 1.5rem;
+  }
+  
+}
+@media only screen and (max-width: 640px) {
   /*no intermediate boundary*/
   article section#resume,
   article section#techSkills table#techSkillsTable tbody
@@ -325,6 +386,7 @@ main, section {
   }
   article section#techSkills {
     margin-top: 1.5rem;
+    margin-bottom: 2.4rem;
   }
   main {
     padding: 1%;
@@ -410,6 +472,12 @@ main, section {
     line-height: 1.3rem;
   }
 }
+
+
+
+
+
+
 
 /*animation fly-in for header photo and text,	
 but only if user does not prefer reduced motion*/	

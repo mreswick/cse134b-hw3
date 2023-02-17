@@ -314,6 +314,7 @@ picture:active
   transform: scale(1.1);
 }
 
+
 :root {
   --iframe-width: 560px;
   --iframe-height: 315px;
@@ -338,18 +339,25 @@ section#videos div.iframeCont {
     max-width: 70%;
   }
 }
-@media only screen and (min-width: 641px)
+@media only screen and (min-width: 640px)
 and (max-width: 839px) {
   article iframe {
-    width: calc(var(--iframe-width) * 0.55);
-    height: calc(var(--iframe-height) * 0.55);
+    width: calc(var(--iframe-width) * 0.6);
+    height: calc(var(--iframe-height) * 0.6);
   }
   main {
-    max-width: 70%;
+    max-width: 90%;
+    padding: 0;
   }
 }
-@media only screen and (min-width: 641px) 
+@media only screen and (min-width: 640px) 
 and (max-width: 1008px) {
+  h2, h3 {
+    line-height: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
   section#robEce div.vidCont, 
   section#robEce div.iframeCont,
   section#videos div.iframeCont
@@ -370,14 +378,14 @@ and (max-width: 1008px) {
     height: calc(var(--mae-vid-height) * 0.2px);
   } */
   article video {
-    width: 300px;
+    width: 320px;
   }
   section#photos picture,
   section#photos picture source,
   section#photos picture img
   {
-    width: calc(var(--pic-width) * 0.6);
-    height: calc(var(--pic-height) * 0.6);
+    width: calc(var(--pic-width) * 0.8);
+    height: calc(var(--pic-height) * 0.8);
   }
   article section#Websites-and-Soundscapes,
   article section#robEce,
@@ -396,7 +404,7 @@ and (max-width: 1008px) {
     margin-right: 2%;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
   article section#musicContainer ul {
     margin-bottom: 0;
   }
@@ -441,18 +449,18 @@ and (max-width: 1008px) {
     margin-top: 1rem;
   }
   article video {
-    width: 220px;
+    width: 270px;
   }
   section#photos picture,
   section#photos picture source,
   section#photos picture img
   {
-    width: calc(var(--pic-width) * 0.5);
-    height: calc(var(--pic-height) * 0.5);
+    width: calc(var(--pic-width) * 0.65);
+    height: calc(var(--pic-height) * 0.65);
   }
   article iframe {
-    width: calc(var(--iframe-width) * 0.4);
-    height: calc(var(--iframe-height) * 0.4);
+    width: calc(var(--iframe-width) * 0.5);
+    height: calc(var(--iframe-height) * 0.5);
   }
   section#robEce div.vidCont, 
   section#robEce div.iframeCont,
@@ -508,4 +516,18 @@ but only if user does not prefer reduced motion*/
       transform: translateX(0);	
     }	
   }	
+}
+
+/* section#robEce ul#robEceList {
+  list-style-position: inside;
+} */
+section#robEce ul#robEceList figure#maeRobVid {
+  display: flex-inline;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+section#robEce ul#robEceList figure#maeRobVid figcaption#maeRobVidCap {
+
 }
