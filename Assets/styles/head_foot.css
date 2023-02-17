@@ -122,8 +122,9 @@ input#lab {
 /* .hamMenu input  */
 
 
-div#di
+span#di
 {
+  display: block;
   content: ""; /*to show up with content*/
   width: var(--ham-bar-width);
   height: var(--ham-bar-height);
@@ -151,7 +152,7 @@ li#mainnavHam input {
   pointer-events: none;
 }
 /* .hamMenu input:checked { */
-li#mainnavHam input:checked + label div{
+li#mainnavHam input:checked + label span{
   /* background-color: lightblue;
   width: calc(var(--ham-bar-width) + 1rem) */
   opacity: 0;

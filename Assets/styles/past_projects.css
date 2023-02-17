@@ -220,10 +220,10 @@ section#videos div.iframeCont
 }
 section#videos figure {
   /*flex (to center video/iframe)*/
-  display: inline-flex;
-  flex-direction: column;
+  /* display: flex-inline; */
+  /* flex-direction: column;
   justify-content: start;
-  align-items: center;
+  align-items: center; */
 }
 section#videos iframe {
   border: none;
@@ -521,13 +521,13 @@ but only if user does not prefer reduced motion*/
 /* section#robEce ul#robEceList {
   list-style-position: inside;
 } */
-section#robEce ul#robEceList figure#maeRobVid {
-  display: inline-flex;
+/* section#robEce ul#robEceList figure#maeRobVid { */
+  /* display: flex-inline;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
-}
+  align-items: center; */
+/* } */
 
-section#robEce ul#robEceList figure#maeRobVid figcaption#maeRobVidCap {
+/* section#robEce ul#robEceList figure#maeRobVid figcaption#maeRobVidCap {
 
-}
+} */
