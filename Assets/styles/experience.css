@@ -138,7 +138,7 @@ section#work > ul ul, section#volunteer > ul ul {
   display: block;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
   /*Tech Skills*/
   section#techSkills {
     padding-bottom: 0.3rem;
