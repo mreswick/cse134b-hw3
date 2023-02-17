@@ -475,6 +475,7 @@ article section#techSkills {
   }
   article {
     padding: 0;
+    margin: 1%;
     width: fit-content;
   }
 }
