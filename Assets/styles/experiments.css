@@ -208,6 +208,9 @@ main {
     margin-left: 1%;
     margin-top: 5%;
   }
+  h1 {
+    line-height: 2.4rem;
+  }
   article {
     padding: 1%;
     width: fit-content;
