@@ -416,7 +416,7 @@ article section#techSkills {
   }
 
   section table#techSkillsTable > caption {
-    margin: 0.2rem 1rem 0.7rem;
+    /* margin: 0.2rem 1rem 0.7rem; */
     text-align: start;
   }
   section table#techSkillsTable > tr {
@@ -474,9 +474,9 @@ article section#techSkills {
     margin-bottom: 0;
     line-height: 1.3rem;
   }
-  article {
+  article,  main, body {
     padding: 0;
-    margin: 1%;
+    margin: 0;
     width: fit-content;
   }
   ul#ucsdList, ul#canadaCollege {
