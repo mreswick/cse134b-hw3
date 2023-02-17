@@ -353,7 +353,7 @@ article section#techSkills {
     padding-right: 2%
   }
   h1 {
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
     white-space: normal;
     margin-bottom: 1.5rem;
   }
