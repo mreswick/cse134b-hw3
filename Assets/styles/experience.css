@@ -137,6 +137,79 @@ section#work > ul ul, section#volunteer > ul ul {
   padding-left: 1%;
   display: block;
 }
+/*Tech Skills*/
+section#techSkills {
+  padding-bottom: 0.3rem;
+}
+section table#techSkillsTable {
+  margin: 0.5rem 0;
+  /*table as flow container*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+section table#techSkillsTable tbody {
+    /*style*/
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
+section table#techSkillsTable > caption {
+  /* margin: 0.2rem 1rem 0.7rem; */
+  text-align: start;
+}
+section table#techSkillsTable > tr {
+  display: block;
+
+}
+section table#techSkillsTable td,
+section table#techSkillsTable th {
+  padding: 0;
+  width: fit-content;
+  font-weight: 500;
+  /* border-left: 0.3rem solid black; */
+}
+section table#techSkillsTable th {
+  font-weight: bold;
+}
+section table#techSkillsTable tr:nth-child(even) {
+  background-color: rgb(67, 122, 200);
+}
+section table#techSkillsTable tr:nth-child(odd) {
+  background-color: rgb(145, 201, 250);
+}
+/*don't display last column*/
+/* article section#techSkills table#techSkillsTable tr td.col3,
+article section#techSkills table#techSkillsTable tr th.col3
+{
+  display: none;
+} */
+
+section table#techSkillsTable td {
+  text-align: center;
+}
+section table#techSkillsTable td,
+section table#techSkillsTable th
+{
+  /* padding: 1rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* - rounded table corners*/
+section table#techSkillsTable th#langToolColHeader {
+  border-top-left-radius: 1rem;
+}
+section table#techSkillsTable th#moreDescripColHeader {
+  border-top-right-radius: 1rem;
+}
+section table#techSkillsTable tr#Git td.col1 {
+  border-bottom-left-radius: 1rem;
+}
+section table#techSkillsTable tr#Git td.col3 {
+  border-bottom-right-radius: 1rem;
+}
 
 @media only screen and (max-width: 640px) {
   /*Tech Skills*/
@@ -300,6 +373,79 @@ article section#techSkills {
   margin-top: 1.5rem;
 }
 @media only screen and (max-width: 1008px) and (min-width: 640px) {
+  /*Tech Skills*/
+  section#techSkills {
+    padding-bottom: 0.3rem;
+  }
+  section table#techSkillsTable {
+    margin: 0.5rem 0;
+    /*table as flow container*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  section table#techSkillsTable tbody {
+      /*style*/
+      border: 0.2rem solid black;
+      border-radius: 1rem;
+      padding: 0.4rem;
+  }
+
+  section table#techSkillsTable > caption {
+    /* margin: 0.2rem 1rem 0.7rem; */
+    text-align: start;
+  }
+  section table#techSkillsTable > tr {
+    display: block;
+
+  }
+  section table#techSkillsTable td,
+  section table#techSkillsTable th {
+    padding: 0;
+    width: fit-content;
+    font-weight: 500;
+    /* border-left: 0.3rem solid black; */
+  }
+  section table#techSkillsTable th {
+    font-weight: bold;
+  }
+  section table#techSkillsTable tr:nth-child(even) {
+    background-color: rgb(67, 122, 200);
+  }
+  section table#techSkillsTable tr:nth-child(odd) {
+    background-color: rgb(145, 201, 250);
+  }
+  /*don't display last column*/
+  /* article section#techSkills table#techSkillsTable tr td.col3,
+  article section#techSkills table#techSkillsTable tr th.col3
+  {
+    display: none;
+  } */
+
+  section table#techSkillsTable td {
+    text-align: center;
+  }
+  section table#techSkillsTable td,
+  section table#techSkillsTable th
+  {
+    /* padding: 1rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  /* - rounded table corners*/
+  /* section table#techSkillsTable th#langToolColHeader {
+    border-top-left-radius: 1rem;
+  }
+  section table#techSkillsTable th#lvlMasteryColHeader {
+    border-top-right-radius: 1rem;
+  }
+  section table#techSkillsTable tr#Git td.col1 {
+    border-bottom-left-radius: 1rem;
+  }
+  section table#techSkillsTable tr#Git td.col2 {
+    border-bottom-right-radius: 1rem;
+  } */
   
   article section#work,
   article section#volunteer,
