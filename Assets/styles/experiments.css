@@ -159,10 +159,13 @@ main {
   
 }
 @media only screen and (max-width: 639px) {
-  pre {
+  section#codingStyles pre {
+    padding: 0;
+  }
+  section#codingStyles pre {
     width: fit-content;
     padding-left: 0.5%;
-    padding-right: 0.5%;
+    padding-right: 1%;
   }
   /* main {
     font-size: 19px;
@@ -173,7 +176,7 @@ main {
   article header p#headP {
     text-indent: 2%;
     margin-top: 1.5rem;
-    margin-left: 1%;
+    /* margin-left: 1%; */
   }
   article {
     width: fit-content;
@@ -183,8 +186,7 @@ main {
   }
   section#codingStyles pre {
     width: fit-content;
-    padding: 2%;
-    padding-right: 3rem;
+    padding: 1%;
     transform: scale(0.5);
   }
   section {
@@ -205,6 +207,11 @@ main {
   article#theart header#experimentsHeader h1 {
     word-break: break-all;
   }
+  h1, h2 {
+    margin-left: 1%;
+    margin-top: 5%;
+  }
+  
 
 }
 
