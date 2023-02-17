@@ -309,7 +309,7 @@ picture:hover,
 section#robEce figure:active,
 section#videos figure:active,
 section#photos figcaption:active,
-picture:active,
+picture:active
 {
   transform: scale(1.1);
 }
@@ -346,8 +346,8 @@ and (max-width: 839px) {
 and (max-width: 1008px) {
   section#robEce div.vidCont, 
   section#robEce div.iframeCont,
-  section#videos div.iframeCont,
-  section#photos figure#lastPhotoFig
+  section#videos div.iframeCont
+  /* ,section#photos figure#lastPhotoFig */
   {
     width: fit-content;
     /* padding-left: 0.5rem;
