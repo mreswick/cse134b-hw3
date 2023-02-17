@@ -479,6 +479,11 @@ article section#techSkills {
     margin: 1%;
     width: fit-content;
   }
+  ul#ucsdList, ul#canadaCollege {
+    width: fit-content;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
 }
 
 
