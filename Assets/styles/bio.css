@@ -308,7 +308,7 @@ p#envLastP:active,
 ol#valuesList:active,
 section#hobbiesSec ul:active,
 p#currentlyP:active, 
-p#backgroundP:active,figure:active,
+p#backgroundP:active,figure:active
 {
   /* font-size: 1.5rem;
   line-height: 1.6rem; */
@@ -457,4 +457,34 @@ article#background section#shepiSec figure#shepiImg {
   padding-left: 5%;
   padding-right: 5%;
   min-width: fit-content;
+}
+
+/*animation fly-in for header photo and text,	
+but only if user does not prefer reduced motion*/	
+@media (prefers-reduced-motion: no-preference) {	
+  main {	
+    overflow: hidden;	
+  }	
+  main figure#robFig, main p#backgroundP {	
+    animation: 1.5s ease-in-out slideinhead;	
+  }	
+  article section {	
+    animation: 1.5s ease-in-out slideintext;	
+  }	
+  @keyframes slideinhead {	
+    from {	
+      transform: translateX(100vw);	
+    }	
+    to {	
+      transform: translateX(0); 	
+    }	
+  }	
+  @keyframes slideintext {	
+    from {	
+      transform: translateX(-100vw);	
+    }	
+    to {	
+      transform: translateX(0);	
+    }	
+  }	
 }

@@ -334,12 +334,18 @@ section#videos div.iframeCont {
     width: calc(var(--iframe-width) * 0.8);
     height: calc(var(--iframe-height) * 0.8);
   }
+  main {
+    max-width: 70%;
+  }
 }
 @media only screen and (min-width: 641px)
 and (max-width: 839px) {
   article iframe {
     width: calc(var(--iframe-width) * 0.55);
     height: calc(var(--iframe-height) * 0.55);
+  }
+  main {
+    max-width: 70%;
   }
 }
 @media only screen and (min-width: 641px) 
@@ -471,4 +477,35 @@ main {
 
 main article section figure {
   min-width: fit-content;
+}
+
+/*animation fly-in for header photo and text,	
+but only if user does not prefer reduced motion*/	
+@media (prefers-reduced-motion: no-preference) {	
+  main {	
+    overflow: hidden;	
+  }	
+  main section#musicContainer {	
+    animation: 2s ease-in-out slideinhead;	
+  }	
+  section#Websites-and-Soundscapes section#chessContainer, 
+  p#headerP {	
+    animation: 2s ease-in-out slideintext;	
+  }	
+  @keyframes slideinhead {	
+    from {	
+      transform: translateX(100vw);	
+    }	
+    to {	
+      transform: translateX(0); 	
+    }	
+  }	
+  @keyframes slideintext {	
+    from {	
+      transform: translateX(-100vw);	
+    }	
+    to {	
+      transform: translateX(0);	
+    }	
+  }	
 }

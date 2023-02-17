@@ -138,8 +138,8 @@ but only if user does not prefer reduced motion*/
   main > figure {	
     animation: 2s ease-in-out slideinhead;	
   }	
-  article section, h1, hr#titleHr {	
-    animation: 2s ease-in-out slideintext;	
+  article section, hr#titleHr {	
+    animation: 1s ease-in-out slideintext;	
   }	
   @keyframes slideinhead {	
     from {	

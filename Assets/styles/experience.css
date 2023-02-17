@@ -42,7 +42,7 @@ article section {
   /*style*/
   background-color: white;
   /* background-color: rgb(252, 253, 255); */
-  border: 0.12rem solid black;
+  border: 0.2rem solid black;
   border-radius: 1.5rem;
   padding: 1rem 5% 1.5rem;
   margin: 1rem 2rem 0;
@@ -409,4 +409,34 @@ main, section {
     margin-bottom: 0;
     line-height: 1.3rem;
   }
+}
+
+/*animation fly-in for header photo and text,	
+but only if user does not prefer reduced motion*/	
+@media (prefers-reduced-motion: no-preference) {	
+  main {	
+    overflow: hidden;	
+  }	
+  div#infoCard, section#work {	
+    animation: 1.5s ease-in-out slideinhead;	
+  }	
+  section#education {	
+    animation: 1.5s ease-in-out slideintext;	
+  }
+  @keyframes slideinhead {	
+    from {	
+      transform: translateX(100vw);	
+    }	
+    to {	
+      transform: translateX(0); 	
+    }	
+  }	
+  @keyframes slideintext {	
+    from {	
+      transform: translateX(-100vw);	
+    }	
+    to {	
+      transform: translateX(0);	
+    }	
+  }	
 }
