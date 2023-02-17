@@ -473,6 +473,10 @@ article section#techSkills {
     margin-bottom: 0;
     line-height: 1.3rem;
   }
+  article {
+    padding: 0;
+    width: fit-content;
+  }
 }
 
 
