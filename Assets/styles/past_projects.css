@@ -220,7 +220,7 @@ section#videos div.iframeCont
 }
 section#videos figure {
   /*flex (to center video/iframe)*/
-  display: flex-inline;
+  display: inline-flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -522,7 +522,7 @@ but only if user does not prefer reduced motion*/
   list-style-position: inside;
 } */
 section#robEce ul#robEceList figure#maeRobVid {
-  display: flex-inline;
+  display: inline-flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;

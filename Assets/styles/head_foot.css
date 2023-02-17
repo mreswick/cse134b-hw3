@@ -179,7 +179,7 @@ input:checked ~ .hamMenu::after {
   /*offset down by height/2 of bar*/ 
   translate: 0 calc(var(--ham-bar-height) / 2);
 }
-.hamMenu:has(input:checked)::after {
+/* .hamMenu:has(input:checked)::after { */
 /* .hamMenu input:checked::after { */
   /* background-color: red; */
   /* rotate: -45deg;  */
@@ -187,7 +187,7 @@ input:checked ~ .hamMenu::after {
   /* width: var(--ham-x-width); */
   /*offset down by height/2 of bar*/
   /* translate: 0 calc(var(--ham-bar-height) / 2); */
-}
+/* } */
 
 /*nav menu "sidebar" that slides down*/
 /* nav.downNav { */
@@ -209,14 +209,14 @@ input:checked ~ .hamMenu::after {
 } */
 
 /* ham menu coloring on edges*/
-.hamMenu:has(input:checked) {
+/* .hamMenu:has(input:checked) { */
   /*swap foreground and background colors*/ 
   /* --temp-color: var(--foreground-color);
   --foreground-color: var(--backgorund-color);
   --background-color: var(--temp-color); */
-  --foreground-color: white;
+  /* --foreground-color: white;
   --background-color: grey;
-} 
+}  */
 /* .hamMenu:has(input:focus-visible)::before,
 .hamMenu:has(input:focus-visible)::after,
 .hamMenu input:focus-visible {
@@ -290,7 +290,7 @@ header a.homeMain {
   display: block;
   grid-area: homeMain;
   font-size: 6rem;
-  font: 'Trebuchet MS';
+  /* font: 'Trebuchet MS'; */
   padding-bottom: 0;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
@@ -369,7 +369,7 @@ ul.mainNavigation > li {
   }
   li#mainnavProj {
     grid-area: proj;
-    justify-self: safe;
+    justify-self: start;
     margin-bottom: 0.1rem;
   }
   li#mainnavTouch {
@@ -387,7 +387,7 @@ ul.mainNavigation > li {
     text-align: left;
     padding-left: 0;
     position: absolute;
-    top: bottom;
+    /* top: bottom; */
     display: none;
   }
   header li:hover > ul.subMainNav
@@ -490,7 +490,7 @@ ul.mainNavigation > li {
     /* left: 50%;  */
     left: 10%;
 
-    overflow: wrap;
+    overflow-wrap: anywhere;
     white-space: normal;
 
   }
