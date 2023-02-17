@@ -393,7 +393,7 @@ p#backgroundP:active,figure:active
   }
   /*adjust heading line heights*/
   article#background h2, h3, h4 {
-    line-height: 1.2rem;
+    line-height: 1.5rem;
   }
   article#background h3, article#background h4 {
     margin-top: 0.3rem;
