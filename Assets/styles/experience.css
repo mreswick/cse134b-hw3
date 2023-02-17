@@ -53,7 +53,9 @@ article section a {
   text-decoration: none;
   color: rgb(0, 0, 100);
 }
-article section a:hover {
+article section a:hover,
+article section a:active
+ {
   color:rgb(7, 83, 150);
 }
 article figure {
@@ -265,7 +267,10 @@ ul#lessonsLearnedList li {
 }
 h1:hover, h2:hover, h3:hover,
 div#infoCard:hover,article section.innerCard:hover,
-ul#lessonsLearnedList li:hover {
+ul#lessonsLearnedList li:hover,
+h1:active, h2:active, h3:active,
+div#infoCard:active,article section.innerCard:active,
+ul#lessonsLearnedList li:active {
   /* font-size: 1.5rem;
   line-height: 1.6rem; */
   transform: scale(1.08);

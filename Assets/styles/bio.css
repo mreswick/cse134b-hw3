@@ -59,7 +59,9 @@ article section a, section#currLastSec a {
   text-decoration: none;
   color: rgb(0, 0, 100);
 }
-article section a:hover, section#currLastSec a:hover {
+article section a:hover, section#currLastSec a:hover,
+article section a:active, section#currLastSec a:active
+{
   color:rgb(7, 83, 150);
 }
 article figure {
@@ -299,7 +301,15 @@ p#envLastP:hover,
 ol#valuesList:hover,
 section#hobbiesSec ul:hover,
 p#currentlyP:hover, 
-p#backgroundP:hover,figure:hover {
+p#backgroundP:hover,figure:hover,
+h1:active, h2:active, h3:active,h4:active,
+div#pWithAside:active,
+p#envLastP:active,
+ol#valuesList:active,
+section#hobbiesSec ul:active,
+p#currentlyP:active, 
+p#backgroundP:active,figure:active,
+{
   /* font-size: 1.5rem;
   line-height: 1.6rem; */
   transform: scale(1.08);

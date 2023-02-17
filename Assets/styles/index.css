@@ -86,7 +86,9 @@ article section a {
   text-decoration: none;
   color: rgb(0, 0, 100);
 }
-article section a:hover {
+article section a:hover,
+article section a:active
+{
   color:rgb(7, 83, 150);
 }
 footer#amznOffer > p {
@@ -172,7 +174,10 @@ footer#amznOffer {
   transition-duration: 0.5s;	
 }	
 h1:hover, article section:hover, figure:hover,	
-footer#amznOffer:hover {	
+footer#amznOffer:hover,
+h1:active, article section:active, figure:active,	
+footer#amznOffer:active,
+{	
   /* font-size: 1.5rem;	
   line-height: 1.6rem; */	
   transform: scale(1.08);	

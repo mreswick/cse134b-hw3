@@ -18,7 +18,9 @@ main {
 header a, li#mainnavProj {
   color: white;
 }
-header a:hover, li#mainnavProj:hover {
+header a:hover, li#mainnavProj:hover,
+header a:active, li#mainnavProj:active
+{
   /* color:rgb(42, 198, 223); */
   color: rgb(0, 166, 255);
   /* color: rgb(0, 153, 255); */
@@ -56,7 +58,9 @@ footer a {
   color: rgb(0, 0, 100);
   text-decoration: none;
 }
-footer a:hover {
+footer a:hover,
+footer a:active,
+{
   color: rgb(7, 83, 150);
 }
 footer a#backToTop {
@@ -376,10 +380,13 @@ ul.mainNavigation > li {
     top: bottom;
     display: none;
   }
-  header li:hover > ul.subMainNav {
+  header li:hover > ul.subMainNav,
+  header li:active > ul.subMainNav,
+  {
     display: block;
   }
-  header ul.subMainNav:hover {
+  header ul.subMainNav:hover,
+  header ul.subMainNav:active {
     color: rgb(0, 0, 100);
   }
   header li > ul.subMainNav li {

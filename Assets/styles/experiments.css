@@ -47,7 +47,9 @@ article section a {
   text-decoration: none;
   color: rgb(0, 0, 100);
 }
-article section a:hover {
+article section a:hover,
+article section a:active
+{
   color:rgb(7, 83, 150);
 }
 article figure {
