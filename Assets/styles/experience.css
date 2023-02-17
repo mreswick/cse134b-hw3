@@ -493,6 +493,9 @@ article section#techSkills {
     margin-bottom: 0.7rem;
     width: fit-content;
   }
+  footer#endOfPage {
+    width: 100vw;
+  }
 }
 
 
