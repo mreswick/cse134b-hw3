@@ -484,6 +484,15 @@ article section#techSkills {
     overflow-wrap: break-word;
     white-space: normal;
   }
+  h2#hResume {
+    margin-left: 0;
+  }
+  section#techSkills table#techSkillsTable caption {
+    margin: 0;
+    margin-top: 0.2rem;
+    margin-bottom: 0.7rem;
+    width: fit-content;
+  }
 }
 
 
