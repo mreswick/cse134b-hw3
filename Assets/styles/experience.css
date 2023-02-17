@@ -484,6 +484,10 @@ article section#techSkills {
     overflow-wrap: break-word;
     white-space: normal;
   }
+  h1 {
+    margin-right: 3%;
+    overflow-wrap: break-word;
+  }
   h2#hResume {
     margin-left: 0;
   }
